@@ -14,6 +14,8 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
       <Routes>
         <Route element={<App />} >
           <Route path='/' element={<PageHome />} />
+          <Route path='/' element={<PageHome />} />
+          <Route path='/' element={<PageHome />} />
         </Route>
       </Routes>
     </BrowserRouter>
