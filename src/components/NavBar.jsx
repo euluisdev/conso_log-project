@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+import CalculateIcon from '@mui/icons-material/Calculate';
+
 import './cssComponents/NavBar.css';
 
 const NavBar = () => {
@@ -12,7 +14,7 @@ const NavBar = () => {
                     </Link>
                 </span>
                 <ul className="nav-list">
-                    <li><Link to='/calculator'> Calculator</Link></li>
+                    <li><Link to='/calculator'><CalculateIcon /> Calculator</Link></li>
                     <li><Link to='/todolist'>Todo List</Link></li>
                     <li><Link to='/movies'>Movies</Link></li>
                     <li><Link to='/form'>Form Steps</Link></li>
