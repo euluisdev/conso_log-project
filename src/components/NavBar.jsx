@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function NavBar() {
+const NavBar = () => {
     return (
         <div className='nav-contente'>
             <nav id='navbar'>
@@ -9,15 +9,15 @@ function NavBar() {
                         CONSO.LOG <p>{'<project />'}</p>
                     </Link>
                 </span>
-                <h2>
-                </h2>
-                <Link to='/calculator'>Calculator</Link>
-                <Link to='/todolist'>Todo List</Link>
-                <Link to='/movies'>Movies</Link>
-                <Link to='/form'>Form Steps</Link>
+                <ul className="nav-list">
+                    <li><Link to='/calculator'>Calculator</Link></li>
+                    <li><Link to='/todolist'>Todo List</Link></li>
+                    <li><Link to='/movies'>Movies</Link></li>
+                    <li><Link to='/form'>Form Steps</Link></li>
+                </ul>
             </nav>
         </div>
-    )
+    );
 };
 
 export default NavBar;
