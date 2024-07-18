@@ -10,6 +10,8 @@ function App() {
         </h2>
         <Link to='/calculator'>Calculator</Link>
         <Link to='/todolist'>Todo List</Link>
+        <Link to='/movies'>Movies</Link>
+        <Link to='/form'>Form Steps</Link>
       </nav>
       <h1>conso.log Project</h1>
       <Outlet />

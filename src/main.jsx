@@ -6,6 +6,8 @@ import App from './App.jsx';
 import PageHome from './pages/home/PageHome.jsx';
 import Calculator from './pages/calculator/Calculator.jsx';
 import TodoList from './pages/todoList/TodoList.jsx';
+import FormSteps from './pages/stepsform/FormSteps.jsx';
+import Movies from './pages/movies/Movies.jsx';
 
 import './index.css';
 
@@ -18,6 +20,8 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
           <Route path='/' element={<PageHome />} />
           <Route path='calculator' element={<Calculator />} />
           <Route path='todolist' element={<TodoList />} />
+          <Route path='movies' element={<Movies />} />
+          <Route path='form' element={<FormSteps />} />
         </Route>
       </Routes>
     </BrowserRouter>
