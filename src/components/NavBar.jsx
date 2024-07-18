@@ -2,10 +2,14 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
-        <div id='container'>
+        <div className='nav-contente'>
             <nav id='navbar'>
+                <span className='logo'>
+                    <Link to='/'>
+                        CONSO.LOG <p>{'<project />'}</p>
+                    </Link>
+                </span>
                 <h2>
-                    <Link to='/'>Page Home</Link>
                 </h2>
                 <Link to='/calculator'>Calculator</Link>
                 <Link to='/todolist'>Todo List</Link>
