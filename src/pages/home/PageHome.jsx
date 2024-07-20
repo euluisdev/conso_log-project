@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './home.css/PageHome.css'
+
 function PageHome() {
   return (
     <section className='homePage-cont'>
