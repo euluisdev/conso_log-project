@@ -1,12 +1,14 @@
-import React from 'react'
+import HomeTitle from './HomeTitle.jsx';
 
 import './home.css/PageHome.css'
 
 function PageHome() {
+  const title = ' `Explore our inspiring <projects />` '
+
   return (
     <section className='homePage-cont'>
       <div className='initial-text'>
-        <h1>I am PageHome</h1>
+        <h1><HomeTitle title={title} /></h1>
       </div>
       <div>
         <p>slider</p>
