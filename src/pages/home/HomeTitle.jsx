@@ -17,13 +17,23 @@ const HomeTitle = ({ title }) => {
                 }
             }, 100);
 
-            return () => clearInterval(interval);
+            const cursorInterval = setInterval(() => {
+                setShowCursor(prev => !prev);
+            }, 500); 
+        
+                return () => {  //evita vazamento de memória, após o component ser desmontado
+                    clearInterval(interval);
+                    clearInterval(cursorInterval); 
+                };
         };
     }, [title]);
 
     return (
         <div>
-            <h1>{displayedTitle}</h1>
+            <h1 className="home-title">
+                {displayedTitle}
+                {showCursor && <span>|</span>}
+            </h1>
         </div>
     )
 }
