@@ -1,3 +1,4 @@
+import HomeSlider from './HomeSlider.jsx';
 import HomeTitle from './HomeTitle.jsx';
 
 import './home.css/PageHome.css'
@@ -11,7 +12,7 @@ function PageHome() {
         <h1><HomeTitle title={title} /></h1>
       </div>
       <div>
-        <p>slider</p>
+        <p><HomeSlider /></p>
       </div>
       <div className="txt-end">
         <p>
