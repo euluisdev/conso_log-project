@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css'; 
+import './home.css/HomeSlider.css'
  
 const HomeSlider = () => { 
     const data = [ 
