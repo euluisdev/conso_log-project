@@ -1,0 +1,23 @@
+.slider-container {
+    margin: 0 auto;
+}
+
+.slide-item {
+    width: 100%;
+    max-width: 40%;
+    height: 25vw;
+    object-fit: cover;
+    font-weight: bold;
+    margin: 5rem 0 6rem 0;
+    text-align: center;
+    color: blue;
+    background: #000000a1;
+    border: 5px solid transparent; 
+    border-image: linear-gradient(to right, rgba(0, 119, 255, 0.699), blue); /* Gradiente para a borda */
+    border-image-slice: 1;
+    box-shadow: 0 10px 50px rgba(0, 0, 255, 0.5), 
+                0 10px 50px rgba(0, 0, 255, 0.5), 
+                0 10px 50px rgba(0, 0, 255, 0.5); /* Sombra 3D */
+    transition: transform 0.3s ease; /* Transição suave para efeito de movimento */
+}
+
