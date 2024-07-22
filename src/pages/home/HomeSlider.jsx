@@ -4,14 +4,14 @@ import 'swiper/css';
  
 const HomeSlider = () => { 
     const data = [ 
-        { id: 1, text: 'Resolva seus cálculos matemáticos utilizando nossa calculadora.', src: 'src/pages/home/img/1+1=3.jpg' },
-        { id: 2, text: 'Organize sua lista de afazeres diários com a nossa ToDo list.', src: 'src/pages/home/img/home-todo.jpg' },
-        { id: 3, text: 'Viaje no mundo Cinematográfico, desbravando toda descrição do seu fime preferido.', src: 'src/pages/home/img/movie.jpg' },
-        { id: 4, text: 'Avalie toda nossa aplicação pelo nosso formulário incrível!', src: 'src/pages/home/img/form.jpg' },  
+        { id: 1, text: 'Resolva seus cálculos matemáticos utilizando nossa calculadora.', src: 'src/pages/home/img-home/1+1=3.jpg' }, 
+        { id: 2, text: 'Organize sua lista de afazeres diários com a nossa ToDo list.', src: 'src/pages/home/img-home/calc-ios.jpg' }, 
+        { id: 3, text: 'Viaje no mundo Cinematográfico, desbravando toda descrição do seu fime preferido.', src: 'src/pages/home/img-home/form.jpg' }, 
+        { id: 4, text: 'Avalie toda nossa aplicação pelo nosso formulário incrível!', src: 'src/pages/home/img-home/movie.jpg' },   
     ]; 
 
 
-    return ( 
+    return (  
         <div className='slider-container'>  
             <Swiper 
                 slidesPerView={1} 
@@ -31,4 +31,4 @@ const HomeSlider = () => {
     ) 
 } 
 
-export default HomeSlider; 
+export default HomeSlider;  
