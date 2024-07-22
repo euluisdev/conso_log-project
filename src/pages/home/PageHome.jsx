@@ -1,5 +1,5 @@
-import HomeSlider from './HomeSlider.jsx';
 import HomeTitle from './HomeTitle.jsx';
+import HomeSlider from './HomeSlider.jsx';
 
 import { register } from 'swiper/element/bundle';
 register();
