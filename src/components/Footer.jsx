@@ -1,9 +1,15 @@
 
 const Footer = () => {
   return (
-    <div>
-      <h1>Footer</h1>
-    </div>
+    <footer className="footer-container">
+        <div className="footer-icons">
+            <ul>
+                <li><a href="https://github.com/euluisdev"></a></li> 
+                <li><a href="https://github.com/euluisdev"></a></li> 
+                <li><a href="https://github.com/euluisdev"></a></li> 
+            </ul>
+        </div>
+    </footer>
   )
 }
 
