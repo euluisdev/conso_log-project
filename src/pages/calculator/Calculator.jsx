@@ -5,6 +5,20 @@ import { useState } from "react";
 function Calculator() {
   const [num, setNum] = useState(0); 
 
+  function updateScreen(e) {
+    const inputValue = e.target.innerText;
+
+    if (inputValue === '.' && num.toString().includes('.')) {
+        return;
+    }
+
+    if (num === 0) {
+        setNum(inputValue);
+    } else {
+        setNum(num + inputValue);
+    }
+}; 
+
   return (
     <div className='cont-ainer'>
       <div className="calculator-bg">
