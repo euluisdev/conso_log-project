@@ -1,3 +1,18 @@
-Footer {
-    background-color: red;
-}
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+.footer-container {
+    display: flex; 
+    box-sizing: border-box; 
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(0, 51, 255, 0.514);
+    color: white;
+    padding: 1rem 0 1rem 0;
+    overflow-x: hidden;
+} 
+
