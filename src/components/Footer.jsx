@@ -9,9 +9,9 @@ const Footer = () => {
     <footer className="footer-container">
         <div className="footer-icons">
             <ul>
-                <li><a href="https://github.com/euluisdev"></a></li> 
-                <li><a href="https://github.com/euluisdev"></a></li> 
-                <li><a href="https://github.com/euluisdev"></a></li> 
+                <li><a href="https://github.com/euluisdev"><BsLinkedin /></a></li> 
+                <li><a href="https://github.com/euluisdev"><BsGithub /></a></li> 
+                <li><a href="https://github.com/euluisdev"><BsInstagram /></a></li> 
             </ul>
         </div>
         <div className="developed">
