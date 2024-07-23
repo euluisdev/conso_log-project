@@ -9,6 +9,10 @@ const Footer = () => {
                 <li><a href="https://github.com/euluisdev"></a></li> 
             </ul>
         </div>
+        <div className="developed">
+            <p>Desenvolvido por: <a href="https://github.com/euluisdev">euluis-dev</a></p> 
+            <p>Todos os direitor reservados: &copy; 2024 CONSO.LOG</p> 
+        </div>
     </footer>
   )
 }
