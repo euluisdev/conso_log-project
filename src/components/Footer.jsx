@@ -2,7 +2,7 @@ import {
     BsLinkedin,
     BsGithub,
     BsInstagram,
-  } from 'react-icons/bs';
+} from 'react-icons/bs';
 
 const Footer = () => {
   return (
