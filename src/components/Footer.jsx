@@ -4,6 +4,8 @@ import {
     BsInstagram,
 } from 'react-icons/bs';
 
+import "./cssComponents/Footer.css"
+
 const Footer = () => {
   return (
     <footer className="footer-container">
