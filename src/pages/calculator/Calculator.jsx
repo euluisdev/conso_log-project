@@ -1,7 +1,10 @@
 import { Box, Container } from "@mui/material";
+import { useState } from "react";
 
 
 function Calculator() {
+  const [num, setNum] = useState(0); 
+
   return (
     <div className='cont-ainer'>
       <div className="calculator-bg">
