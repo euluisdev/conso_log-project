@@ -7,3 +7,29 @@
     font-family: "Lato", sans-serif; 
     line-height: 2.8rem; 
 }  
+
+.full-width {
+    padding: 15rem 0rem 3rem 0rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.full-width h2 {
+    padding-bottom: 4rem;
+    max-width: 100%;
+    font-family: "Lato", sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    text-align: center;
+    color: #fcfbf9a6;
+}
+
+.full-width p {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.8rem;
+    padding: 1rem 25rem 5rem 25rem;
+    color: white;
+} 
