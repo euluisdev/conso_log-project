@@ -6,6 +6,7 @@ import './Calculator.css';
 
 const Calculator = () => {
   const [num, setNum] = useState(0); 
+  const [oldNumber, setOldNumber] = useState(0);
 
   function updateScreen(e) {
     const inputValue = e.target.innerText;
