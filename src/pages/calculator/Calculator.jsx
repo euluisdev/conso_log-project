@@ -38,6 +38,21 @@ const Calculator = () => {
     setNum(0);
   };
 
+  const processEqual = () => {
+    let result;
+    if (fourOperation === '/') {
+        result = oldNumber / num;
+    } else if (fourOperation === '*') {
+        result = oldNumber * num;
+    } else if (fourOperation === '-') {
+        result = oldNumber - num;
+    } else if (fourOperation === '+') {
+        result = parseFloat(oldNumber) + parseFloat(num);
+    }
+    setNum(result);
+    setHistory([...history, `${oldNumber} ${fourOperation} ${num} = ${result}`]);
+  }
+
   return (
     <div className='cont-ainer'>
       <div className="calculator-bg">
