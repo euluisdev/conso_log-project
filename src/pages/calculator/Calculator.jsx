@@ -5,22 +5,35 @@ import './Calculator.css';
 
 
 const Calculator = () => {
-  const [num, setNum] = useState(0); 
+  const [num, setNum] = useState(0);
   const [oldNumber, setOldNumber] = useState(0);
+
+  const UsageExemples = () => {
+    <div className="usage-exemples">
+      <h2>Exemplos de Uso</h2>
+      <ul>
+        <li>adição: 12+ 8 = 20</li>
+        <li>Subtração: 20 - 5 = 15</li>
+        <li>Multiplicação: 6 * 7 = 42</li>
+        <li>Divisão: 30 / 5 = 6</li>
+      </ul>
+    </div>
+  };  
+
 
   function updateScreen(e) {
     const inputValue = e.target.innerText;
 
     if (inputValue === '.' && num.toString().includes('.')) {
-        return;
+      return;
     }
 
     if (num === 0) {
-        setNum(inputValue);
+      setNum(inputValue);
     } else {
-        setNum(num + inputValue);
+      setNum(num + inputValue);
     }
-  }; 
+  };
 
   const clear = () => {
     setNum(0);
@@ -28,7 +41,7 @@ const Calculator = () => {
 
   const handlesReverseSignal = () => {
     setNum(prevNum => -prevNum);
-  };  
+  };
 
   const percentage = () => {
     setNum(num / 100);
@@ -44,13 +57,13 @@ const Calculator = () => {
   const processEqual = () => {
     let result;
     if (fourOperation === '/') {
-        result = oldNumber / num;
+      result = oldNumber / num;
     } else if (fourOperation === '*') {
-        result = oldNumber * num;
+      result = oldNumber * num;
     } else if (fourOperation === '-') {
-        result = oldNumber - num;
+      result = oldNumber - num;
     } else if (fourOperation === '+') {
-        result = parseFloat(oldNumber) + parseFloat(num);
+      result = parseFloat(oldNumber) + parseFloat(num);
     }
     setNum(result);
     setHistory([...history, `${oldNumber} ${fourOperation} ${num} = ${result}`]);
@@ -68,6 +81,7 @@ const Calculator = () => {
           </p>
         </section>
         <section className='examples-tricts'>
+          <UsageExemples />
 
         </section>
       </div>
@@ -101,12 +115,12 @@ const Calculator = () => {
             </div>
           </Container >
           <section className='history-calc'>
-            
-          </section> 
-        </div> 
-      </section> 
-    </div> 
-  ) 
-}; 
+
+          </section>
+        </div>
+      </section>
+    </div>
+  )
+};
 
 export default Calculator;
