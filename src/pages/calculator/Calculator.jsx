@@ -7,6 +7,7 @@ import './Calculator.css';
 const Calculator = () => {
   const [num, setNum] = useState(0);
   const [oldNumber, setOldNumber] = useState(0);
+  const [fourOperation, setFourOperation] = useState();
 
   const UsageExemples = () => {
     <div className="usage-exemples">
