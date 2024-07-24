@@ -52,3 +52,51 @@
     padding: 10rem 3rem 5rem 3rem;
 }
 
+.calculator .wrapper {
+    background-color: black;
+    border-radius: 1em;
+    padding: 0.8em;
+}
+
+.calculator .wrapper h3 {
+    color: blue;
+    padding: 1rem;
+}
+
+.calculator .btn-all {
+    width: 3em;
+    height: 3em;
+    cursor: pointer;
+    font-size: 2.6em;
+    border: none;
+    border-radius: 2em;
+    margin: 0.3em;
+}
+
+.calculator .wide {
+    width: 6.5em;
+}
+
+.calculator .orange {
+    background-color: blue;
+    color: white;
+}
+
+.calculator .gray {
+    background-color: #505050;
+    color: white;
+}
+
+.calculator .resOperation {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 0.5em;
+    font-size: 5.5em;
+    letter-spacing: 1.2px;
+    margin-top: 0.2em;
+    overflow: hidden;
+    line-height: 6rem;
+}
+
+
