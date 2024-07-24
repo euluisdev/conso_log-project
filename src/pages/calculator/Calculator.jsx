@@ -27,6 +27,11 @@ const Calculator = () => {
     setNum(prevNum => -prevNum);
   };  
 
+  const percentage = () => {
+    setNum(num / 100);
+  };
+  
+
   return (
     <div className='cont-ainer'>
       <div className="calculator-bg">
