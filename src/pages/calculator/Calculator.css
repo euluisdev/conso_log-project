@@ -33,3 +33,22 @@
     padding: 1rem 25rem 5rem 25rem;
     color: white;
 } 
+
+.flex-cont-ainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #000000, rgba(128, 128, 128, 0.826), #000066);
+    padding-bottom: 4rem;
+}
+
+.calculator {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10rem 3rem 5rem 3rem;
+}
+
