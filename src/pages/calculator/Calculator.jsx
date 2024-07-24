@@ -30,7 +30,13 @@ const Calculator = () => {
   const percentage = () => {
     setNum(num / 100);
   };
-  
+
+  const changeOperation = (e) => {
+    const operation = e.target.innerText;
+    setFourOperation(operation);
+    setOldNumber(num);
+    setNum(0);
+  };
 
   return (
     <div className='cont-ainer'>
