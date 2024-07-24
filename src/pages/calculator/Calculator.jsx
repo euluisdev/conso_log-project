@@ -2,7 +2,7 @@ import { Box, Container } from "@mui/material";
 import { useState } from "react";
 
 
-function Calculator() {
+const Calculator = () => {
   const [num, setNum] = useState(0); 
 
   function updateScreen(e) {
@@ -17,7 +17,15 @@ function Calculator() {
     } else {
         setNum(num + inputValue);
     }
-}; 
+  }; 
+
+  const clear = () => {
+    setNum(0);
+  };
+
+  const handlesReverseSignal = () => {
+    setNum(prevNum => -prevNum);
+  };  
 
   return (
     <div className='cont-ainer'>
@@ -40,7 +48,7 @@ function Calculator() {
           <Container maxWidth="xs">
             <div className="wrapper">
               <h3>Calculator</h3>
-              <h1 className="resOperation">23</h1>
+              {/* <h1 className="resOperation">23</h1> */}
               <Box m={9} />
               <button className="btn-all" onClick={clear}>AC</button>
               <button className="btn-all" onClick={handlesReverseSignal}>+/-</button>
