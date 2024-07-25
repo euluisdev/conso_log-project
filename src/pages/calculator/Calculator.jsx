@@ -20,18 +20,28 @@ const Calculator = () => {
         <li>Divisão: 30 / 5 = 6</li>
       </ul>
     </div>
-  };  
+  };
 
   const TipsAndTricks = () => {
     <div className="tips-and-tricks">
       <ul>
-      <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
-            <li>Pressione "C" para limpar rapidamente a tela.</li>
-            <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
+        <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
+        <li>Pressione "C" para limpar rapidamente a tela.</li>
+        <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
+      </ul>
+    </div>
+  };
+
+  const CalculatorHistory = () => {
+    <div className="calculator-history">
+      <h2>Dicas e Tuques</h2>
+      <ul>
+        <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
+        <li>Pressione "C" para limpar rapidamente a tela.</li>
+        <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
       </ul>
     </div>
   }
-
 
 
 
@@ -129,7 +139,7 @@ const Calculator = () => {
             </div>
           </Container >
           <section className='history-calc'>
-
+            <CalculatorHistory /> 
           </section>
         </div>
       </section>
