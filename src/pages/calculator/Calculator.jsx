@@ -22,6 +22,18 @@ const Calculator = () => {
     </div>
   };  
 
+  const TipsAndTricks = () => {
+    <div className="tips-and-tricks">
+      <ul>
+      <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
+            <li>Pressione "C" para limpar rapidamente a tela.</li>
+            <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
+      </ul>
+    </div>
+  }
+
+
+
 
   function updateScreen(e) {
     const inputValue = e.target.innerText;
@@ -84,7 +96,7 @@ const Calculator = () => {
         </section>
         <section className='examples-tricts'>
           <UsageExemples />
-
+          <TipsAndTricks />
         </section>
       </div>
       <section className='flex-cont-ainer'>
