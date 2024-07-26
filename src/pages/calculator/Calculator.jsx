@@ -36,10 +36,11 @@ const Calculator = () => {
     <div className="calculator-history">
       <h2>Dicas e Tuques</h2>
       <ul>
-        <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
-        <li>Pressione "C" para limpar rapidamente a tela.</li>
-        <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
+        {history.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
       </ul>
+
     </div>
   }
 
@@ -139,7 +140,7 @@ const Calculator = () => {
             </div>
           </Container >
           <section className='history-calc'>
-            <CalculatorHistory /> 
+            <CalculatorHistory />
           </section>
         </div>
       </section>
