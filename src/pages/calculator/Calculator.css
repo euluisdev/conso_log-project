@@ -221,4 +221,8 @@
 
 .calculator-bg {
     background-image: url(src/pages/calculator/img-calculator/ca-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    z-index: -1;
 }
