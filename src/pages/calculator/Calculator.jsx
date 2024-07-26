@@ -11,37 +11,42 @@ const Calculator = () => {
   const [history, setHistory] = useState([]);
 
   const UsageExemples = () => {
-    <div className="usage-exemples">
-      <h2>Exemplos de Uso</h2>
-      <ul>
-        <li>adição: 12+ 8 = 20</li>
-        <li>Subtração: 20 - 5 = 15</li>
-        <li>Multiplicação: 6 * 7 = 42</li>
-        <li>Divisão: 30 / 5 = 6</li>
-      </ul>
-    </div>
+    return (
+      <div className="usage-examples">
+        <h2>Exemplos de Uso</h2>
+        <ul>
+          <li>adição: 12+ 8 = 20</li>
+          <li>Subtração: 20 - 5 = 15</li>
+          <li>Multiplicação: 6 * 7 = 42</li>
+          <li>Divisão: 30 / 5 = 6</li>
+        </ul>
+      </div>
+    );
   };
 
   const TipsAndTricks = () => {
-    <div className="tips-and-tricks">
-      <ul>
-        <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
-        <li>Pressione "C" para limpar rapidamente a tela.</li>
-        <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
-      </ul>
-    </div>
+    return (
+      <div className="tips-and-tricks">
+        <ul>
+          <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
+          <li>Pressione "C" para limpar rapidamente a tela.</li>
+          <li>Experimente funções como porcentagem e inversão de sinal para cálculos mais avançados.</li>
+        </ul>
+      </div>
+    );
   };
 
   const CalculatorHistory = () => {
+    return (
     <div className="calculator-history">
-      <h2>Dicas e Tuques</h2>
+      <h2>Histórico de Cálculos</h2>
       <ul>
         {history.map((item, index) => (
           <li key={index}>{item}</li>
         ))}
       </ul>
-
     </div>
+    );
   }
 
 
@@ -105,7 +110,7 @@ const Calculator = () => {
             Nosso design limpo e amigável torna a experiência de cálculo ainda mais agradável. Com uma interface intuitiva e botões de fácil acesso, você dominará a matemática em pouco tempo.
           </p>
         </section>
-        <section className='examples-tricts'>
+        <section className='examples-tricks'>
           <UsageExemples />
           <TipsAndTricks />
         </section>
