@@ -219,3 +219,6 @@
 
       /* */
 
+.calculator-bg {
+    background-image: url(src/pages/calculator/img-calculator/ca-bg.jpg);
+}
