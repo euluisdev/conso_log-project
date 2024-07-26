@@ -193,5 +193,29 @@
     /* edge movement effect */
 }
 
+.half-width h2 {
+    content: '➤';
+    font-family: "Lato", sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: rgb(0, 60, 255);
+    padding-bottom: 4rem;
+}
 
+.half-width p {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    font-size: 1.7rem;
+    padding: 2rem 3rem 10rem 3rem;
+    color: #FFF;
+}
+
+.half-width a {
+    color: blue;
+}
+
+      /* */
 
