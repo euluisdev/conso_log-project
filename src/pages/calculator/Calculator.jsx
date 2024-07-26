@@ -27,6 +27,7 @@ const Calculator = () => {
   const TipsAndTricks = () => {
     return (
       <div className="tips-and-tricks">
+        <h2>Dicas e Truques</h2>
         <ul>
           <li>Faça uma operação matemática e verifique seu histórico de Cálculos.</li>
           <li>Pressione "C" para limpar rapidamente a tela.</li>
@@ -49,7 +50,7 @@ const Calculator = () => {
     );
   }
 
-
+   /* calculator start */
 
   function updateScreen(e) {
     const inputValue = e.target.innerText;
@@ -121,7 +122,7 @@ const Calculator = () => {
           <Container maxWidth="xs">
             <div className="wrapper">
               <h3>Calculator</h3>
-              {/* <h1 className="resOperation">23</h1> */}
+              <h1 className="resOperation">{num}</h1>
               <Box m={9} />
               <button className="btn-all" onClick={clear}>AC</button>
               <button className="btn-all" onClick={handlesReverseSignal}>+/-</button>
