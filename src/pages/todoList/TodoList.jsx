@@ -5,7 +5,7 @@ function TodoList() {
     <div className="contain">
       <TodoHomePage />
     </div>
-  )
-}
+  );
+};
 
 export default TodoList;
