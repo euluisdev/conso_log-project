@@ -1,9 +1,9 @@
-import React from 'react'
+import TodoHomePage from "./TodoHomePage";
 
 function TodoList() {
   return (
-    <div>
-      <h1>I'm Todo List</h1>
+    <div className="contain">
+      <TodoHomePage />
     </div>
   )
 }
