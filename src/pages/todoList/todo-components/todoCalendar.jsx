@@ -1,9 +1,10 @@
+import Calendar from "react-calendar";
 
 
 const todoCalendar = () => {
   return (
     <div>
-      <h1>Calendar </h1>
+      <Calendar />
     </div>
   )
 }
