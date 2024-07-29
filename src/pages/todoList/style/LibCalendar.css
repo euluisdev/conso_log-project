@@ -23,3 +23,43 @@
     border: none;
     font-family: "Lato", sans-serif;
 }
+
+.react-calendar__tile {
+    max-width: 100%;
+    padding: 1.2rem 0;
+    background: none;
+    border-radius: 6px;
+    border: none;
+}
+
+.react-calendar__tile--now {
+    background: #0066cc;
+    color: white;
+    border-radius: 6px;
+}
+
+.react-calendar__tile--active {
+    background: #00bfff;
+    color: white;
+    border-radius: 6px;
+}
+
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+    background: #009acd;
+}
+
+.react-calendar__navigation button {
+    color: blue;
+    min-width: 5rem;
+    background: none;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+}
+
+.react-calendar__navigation button:enabled:hover,
+.react-calendar__navigation button:enabled:focus {
+    background-color: #e6f7ff;
+    border-radius: 6px;
+} 
+
