@@ -1,5 +1,5 @@
 import { Grid } from "@mui/material";
-import TodoCalendar from "./todo-components/TodoCalendar";
+import LibCalendar from "./todo-components/LibCalendar";
 
 const TodoHomePage = () => {
     return (
@@ -14,7 +14,7 @@ const TodoHomePage = () => {
                     </p>
                 </Grid>
                 <Grid className="calendar"> 
-                    <TodoCalendar />
+                    <LibCalendar />
                 </Grid>
             </Grid>
         </div>
