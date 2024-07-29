@@ -1,9 +1,12 @@
+import { Paper } from "@mui/material";
 
 const TodoForm = () => { 
   return (
-    <div>
-      <h1>Hi Todo Form</h1>
-    </div>
+    <Paper className="formContainer">
+        <div className="formContete">
+            
+        </div>
+    </Paper>
   );
 }; 
 
