@@ -7,11 +7,15 @@ import 'react-calendar/dist/Calendar.css'
 const TodoCalendar = () => {
     const [calendar, setCalendar] = useState(new Date);
 
-  return (
-    <div>
-      <Calendar />
-    </div>
-  )
+    return (
+        <div className="todo-calendar">
+            <Calendar
+                onChange={setCalendar} 
+                value={calendar} 
+                className='react-calendar'
+            />
+        </div>
+    )
 }
 
 export default TodoCalendar;
