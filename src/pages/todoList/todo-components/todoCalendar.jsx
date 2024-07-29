@@ -1,7 +1,7 @@
 import Calendar from "react-calendar";
 
 
-const todoCalendar = () => {
+const TodoCalendar = () => {
   return (
     <div>
       <Calendar />
@@ -9,4 +9,4 @@ const todoCalendar = () => {
   )
 }
 
-export default todoCalendar;
+export default TodoCalendar;
