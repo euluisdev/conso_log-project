@@ -7,4 +7,19 @@
     box-shadow: 1px 4px 8px rgb(34, 0, 255);
 }
 
+.calendar {
+    font-weight: bold;
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: blue;
+}
 
+.react-calendar {
+    max-width: 100%;
+    border: none;
+    font-family: "Lato", sans-serif;
+}
