@@ -1,4 +1,4 @@
-import { Paper, TextField } from "@mui/material";
+import { Button, Paper, TextField } from "@mui/material";
 
 const TodoForm = () => {
     return (
@@ -10,6 +10,7 @@ const TodoForm = () => {
                     variant="outlined" 
                     fullWidth  
                 />
+                <Button variant="text">Add</Button>
             </div>
         </Paper>
     );
