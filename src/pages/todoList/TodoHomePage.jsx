@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { Grid, List } from "@mui/material";
 import LibCalendar from "./todo-components/LibCalendar";
 
 const TodoHomePage = () => {
@@ -15,6 +15,18 @@ const TodoHomePage = () => {
                 </Grid>
                 <Grid item md={3} className="calendar"> 
                     <LibCalendar />
+                </Grid>
+            </Grid>
+
+            <Grid container className="todo-container">
+                <div className="todo-digit">
+                    <p>Digite para não esquecer!</p>
+                </div>
+                <Grid item md={4} >
+                    
+                    <List className="listLi">
+
+                    </List>
                 </Grid>
             </Grid>
         </div>
