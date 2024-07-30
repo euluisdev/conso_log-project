@@ -35,11 +35,11 @@ const TodoHomePage = () => {
                     <p>Digite para não esquecer!</p>
                 </div>
                 <Grid item md={4} >
-                    <TodoForm />
+                    <TodoForm addTask={addTask} />
                     <List className="listLi">
                         {
                             todos.map((item) => (
-                                <div className="todoItem">
+                                <div key={item.id} className="todoItem">
                                     <h1 className="sizee"><TodoItem item={item} /></h1>
                                 </div>
                             ))
