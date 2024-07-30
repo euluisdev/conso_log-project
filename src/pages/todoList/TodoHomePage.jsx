@@ -1,10 +1,14 @@
-import { Grid, List } from "@mui/material";
+import { useState } from "react";
 
 import LibCalendar from "./todo-components/LibCalendar";
 import TodoForm from "./todo-components/TodoForm";
 import TodoItem from "./todo-components/TodoItem";
 
+import { Grid, List } from "@mui/material";
+
 const TodoHomePage = () => {
+    const [todos, settodos] = useState([]); 
+    
     return (
         <div className="todo-wrapper">
             <Grid container spacing={3} className="top-section">
