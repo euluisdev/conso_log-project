@@ -4,6 +4,10 @@ import { useState } from "react";
 const TodoForm = () => {
     const [text, setText] = useState('');
 
+    const TodoCreate = (text) => {
+        console.log(text);
+    }
+
     return (
         <Paper className="formContainer">
             <div className="formContete">
@@ -14,7 +18,7 @@ const TodoForm = () => {
                     variant="outlined" 
                     fullWidth  
                 />
-                <Button variant="text">Add</Button>
+                <Button variant="text" onClick={() => TodoCreate(text)} >Add</Button>
             </div>
         </Paper>
     );
