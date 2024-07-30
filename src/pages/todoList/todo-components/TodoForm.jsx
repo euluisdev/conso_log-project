@@ -10,6 +10,7 @@ const TodoForm = () => {
                 <TextField
                     id="outlined-basic" 
                     label='tarefas' 
+                    onChange={(e) => setText(e.target.value)}
                     variant="outlined" 
                     fullWidth  
                 />
