@@ -5,8 +5,10 @@ const TodoForm = () => {
     const [text, setText] = useState('');
 
     const TodoCreate = (text) => {
-        console.log(text);
-    }
+        if (!text.trim()) return;
+
+        const TodoObj = { text: 'text', id: 'id' }; 
+    };
 
     return (
         <Paper className="formContainer">
