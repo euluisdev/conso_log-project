@@ -2,12 +2,14 @@ import { Button, Paper, TextField } from "@mui/material";
 import { useState } from "react";
 
 const TodoForm = () => {
-    const [text, setText] = useState('');
+    const [text, setText] = useState(''); 
+    const [id, setId] = useState(0);
 
     const TodoCreate = (text) => {
         if (!text.trim()) return;
 
         const TodoObj = { text: 'text', id: 'id' }; 
+        console.log(TodoObj.id);
     };
 
     return (
