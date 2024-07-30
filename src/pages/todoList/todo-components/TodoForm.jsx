@@ -1,7 +1,7 @@
 import { Button, Paper, TextField } from "@mui/material";
 import { useState } from "react";
 
-const TodoForm = () => {
+const TodoForm = ({ addTask }) => {
     const [text, setText] = useState(''); 
     const [id, setId] = useState(0);
 
