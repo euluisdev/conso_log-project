@@ -2,6 +2,7 @@ import { Grid, List } from "@mui/material";
 
 import LibCalendar from "./todo-components/LibCalendar";
 import TodoForm from "./todo-components/TodoForm";
+import TodoItem from "./todo-components/TodoItem";
 
 const TodoHomePage = () => {
     return (
@@ -27,7 +28,7 @@ const TodoHomePage = () => {
                 <Grid item md={4} >
                     <TodoForm />
                     <List className="listLi">
-
+                        <TodoItem />
                     </List>
                 </Grid>
             </Grid>
