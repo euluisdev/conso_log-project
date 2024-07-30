@@ -8,7 +8,7 @@ import Checkbox from '@mui/material/Checkbox';
 import IconButton from '@mui/material/IconButton';
 import CommentIcon from '@mui/icons-material/Comment';
 
-export default function TodoItem() {
+const TodoItem =() => {
   const [checked, setChecked] = React.useState([0]);
 
   const handleToggle = (value) => () => {
@@ -25,7 +25,7 @@ export default function TodoItem() {
   };
 
   return (
-    <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+    <List sx={{ width: '100%', bgcolor: 'background.paper' }}>
       {[0, 1, 2, 3].map((value) => {
         const labelId = `checkbox-list-label-${value}`;
 
@@ -57,3 +57,5 @@ export default function TodoItem() {
     </List>
   );
 };
+
+export default TodoItem; 
