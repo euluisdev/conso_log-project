@@ -9,7 +9,9 @@ const TodoForm = ({ addTask }) => {
         if (!text.trim()) return;
 
         const TodoObj = { text: 'text', id: 'id' }; 
-        console.log(TodoObj.id);
+        setId(id + 1);
+        addTask(TodoObj);
+        setText('');
     };
 
     return (
