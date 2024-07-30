@@ -32,7 +32,14 @@ const TodoHomePage = () => {
                 <Grid item md={4} >
                     <TodoForm />
                     <List className="listLi">
-                        <TodoItem />
+                        {
+                            todos.map((item) => (
+                                <div className="todoItem">
+                                    <h1 className="sizee"><TodoItem item={item} /></h1>
+                                </div>
+                            ))
+                        }
+                        
                     </List>
                 </Grid>
             </Grid>
