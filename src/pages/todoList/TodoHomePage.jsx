@@ -65,7 +65,7 @@ const TodoHomePage = () => {
                 </div>
                 <Grid item md={4} >
                     <TodoForm addTask={addTask} />
-                    <List className="listLi">
+                    <List className="listLi" sx={{ margin: '4rem 0rem' }} >
                         {
                             todos.map((item) => (
                                 <div key={item.id} className="todoItem">
