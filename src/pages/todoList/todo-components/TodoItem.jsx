@@ -50,7 +50,14 @@ const TodoItem = ({ item, deleteTask, editTask }) => {
                                 onChange={handleCheckboxChange} 
                             />
                         </ListItemIcon>
-                        <ListItemText primary={item.text} />
+                        <ListItemText 
+                            primary={item.text} 
+                            className='itemText' 
+                            onClick={() => setOpenDialog(true)} 
+                            sx={{ 
+                                textDecoration: isChecked ? 'line-through' : 'none' 
+                            }} 
+                        />
                     </ListItemButton>
                 </ListItem>
             </Paper>
