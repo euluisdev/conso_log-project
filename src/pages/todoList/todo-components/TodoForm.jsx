@@ -21,6 +21,7 @@ const TodoForm = ({ addTask }) => {
                     id="outlined-basic" 
                     label='tarefas' 
                     onChange={(e) => setText(e.target.value)}
+                    value={text}
                     variant="outlined" 
                     fullWidth  
                 />

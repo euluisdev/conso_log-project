@@ -7,11 +7,11 @@ import TodoItem from "./todo-components/TodoItem";
 import { Grid, List } from "@mui/material";
 
 const TodoHomePage = () => {
-    const [todos, settodos] = useState([]); 
+    const [todos, setTodos] = useState([]); 
 
     const addTask = (item) => {
         const newItem = {id: new Date().getTime(), text: item.text};
-        settodos([newItem, ...todos])
+        setTodos([newItem, ...todos]) 
     };
     
     return (

@@ -9,7 +9,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 import { Paper } from '@mui/material'
 
-const TodoItem = () => {
+const TodoItem = ({ item }) => {
 
     return (
         <>
@@ -30,7 +30,7 @@ const TodoItem = () => {
                                 disableRipple
                             />
                         </ListItemIcon>
-                        <ListItemText primary={`Line item`} />
+                        <ListItemText primary={item.text} />
                     </ListItemButton>
                 </ListItem>
             </Paper>
