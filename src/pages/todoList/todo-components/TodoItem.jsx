@@ -10,17 +10,23 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { Paper } from '@mui/material'
 
 const TodoItem = ({ item, deleteTask, editTask }) => {
-    const [openDialog, setOpenDialog] = useState(false); 
-    const [isChecked, setIsChecked] = useState(false);
+    const [openDialog, setOpenDialog] = useState(false);  
+    const [isChecked, setIsChecked] = useState(false); 
     
     const dialogHandler = () => { 
         setOpenDialog(!openDialog);
-    };
+    }; 
 
     useEffect(() => {
         const storedChecked = JSON.parse(localStorage.getItem(`isChecked-${item.id}`)) || false; 
         setIsChecked(storedChecked);
-    }, [item.id]);
+    }, [item.id]); 
+
+    const handleCheckboxChange = () => {
+        const newChecked = !isChecked;
+        setIsChecked(newChecked);
+        localStorage.setItem(`isChecked-${item.id}`, JSON.stringify(newChecked));
+    }; 
 
     return (
         <>
