@@ -16,7 +16,7 @@ const TodoItem = ({ item }) => {
             <Paper>
                 <ListItem
                     secondaryAction={
-                        <IconButton edge="end" aria-label="delete">
+                        <IconButton onClick={() => deleteTodo(item.id)} edge="end" aria-label="delete" >
                             <DeleteIcon />
                         </IconButton>
                     }
