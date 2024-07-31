@@ -9,14 +9,14 @@ import DeleteIcon from '@mui/icons-material/Delete';
 
 import { Paper } from '@mui/material'
 
-const TodoItem = ({ item }) => {
+const TodoItem = ({ item, deleteTask, editTask }) => {
 
     return (
         <>
             <Paper>
                 <ListItem
                     secondaryAction={
-                        <IconButton onClick={() => deleteTodo(item.id)} edge="end" aria-label="delete" >
+                        <IconButton onClick={() => deleteTask(item.id)} edge="end" aria-label="delete" >
                             <DeleteIcon />
                         </IconButton>
                     }
