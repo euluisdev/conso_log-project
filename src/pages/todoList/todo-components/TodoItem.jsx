@@ -17,6 +17,11 @@ const TodoItem = ({ item, deleteTask, editTask }) => {
         setOpenDialog(!openDialog);
     };
 
+    useEffect(() => {
+        const storedChecked = JSON.parse(localStorage.getItem(`isChecked-${item.id}`)) || false; 
+        setIsChecked(storedChecked);
+    }, [item.id]);
+
     return (
         <>
             <Paper>
