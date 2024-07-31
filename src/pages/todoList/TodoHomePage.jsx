@@ -7,18 +7,27 @@ import TodoItem from "./todo-components/TodoItem";
 import { Grid, List } from "@mui/material";
 
 const TodoHomePage = () => {
-    const [todos, setTodos] = useState([]); 
+    const [todos, setTodos] = useState([]);
 
     const addTask = (item) => {
-        const newItem = {id: new Date().getTime(), text: item.text};
-        setTodos([newItem, ...todos]) 
+        const newItem = { id: new Date().getTime(), text: item.text };
+        setTodos([newItem, ...todos])
     };
 
     const deleteTask = (id) => {
-        let filtered = todos.filter((item) => item.id !== id) 
+        let filtered = todos.filter((item) => item.id !== id)
         setTodos(filtered);
     };
-    
+
+    const editTask = (id, editedText) => {
+        setTodos((prevTodos) =>
+            prevTodos.map((newTodo) => 
+                newTodo.id === id ? 
+                {...newTodo, text: editedText } : newTodo 
+            )
+        )
+    };
+
     return (
         <div className="todo-wrapper">
             <Grid container spacing={3} className="top-section">
@@ -30,7 +39,7 @@ const TodoHomePage = () => {
                         Então, por que esperar? Comece a aumentar sua produtividade e gerenciar suas tarefas de forma eficiente hoje mesmo. Acesse meu GITHUB, para entender todo código fonte da aplicação, e faça um clone agora e transforme a maneira como você lida com suas tarefas diárias. Mas antes, desfrute da nossa aplicação rodando no navegador!"
                     </p>
                 </Grid>
-                <Grid item md={3} className="calendar"> 
+                <Grid item md={3} className="calendar">
                     <LibCalendar />
                 </Grid>
             </Grid>
@@ -49,7 +58,7 @@ const TodoHomePage = () => {
                                 </div>
                             ))
                         }
-                        
+
                     </List>
                 </Grid>
             </Grid>
