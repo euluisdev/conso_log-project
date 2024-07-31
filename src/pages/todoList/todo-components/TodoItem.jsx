@@ -42,9 +42,12 @@ const TodoItem = ({ item, deleteTask, editTask }) => {
                     <ListItemButton role={undefined} dense>
                         <ListItemIcon>
                             <Checkbox
+                                className='itemBox'
                                 edge="start"
                                 tabIndex={-1}
-                                disableRipple
+                                disableRipple 
+                                checked={isChecked} 
+                                onChange={handleCheckboxChange} 
                             />
                         </ListItemIcon>
                         <ListItemText primary={item.text} />
