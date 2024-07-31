@@ -29,6 +29,17 @@ const TodoHomePage = () => {
     }; 
 
     useEffect(() => {
+        try {
+            const storedTodos = JSON.parse(localStorage.getItem('todos')) || [];
+            if (storedTodos.length > 0) {
+                setTodos(storedTodos);
+            }
+        } catch (error) {
+            console.error('Erro ao recuperar os dados do localStorage:', error);
+        };
+    }, []);
+
+    useEffect(() => {
         localStorage.setItem('todos', JSON.stringify(todos));
     }, [todos]);
 
