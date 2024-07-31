@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import LibCalendar from "./todo-components/LibCalendar";
 import TodoForm from "./todo-components/TodoForm";
@@ -24,9 +24,13 @@ const TodoHomePage = () => {
             prevTodos.map((newTodo) => 
                 newTodo.id === id ? 
                 {...newTodo, text: editedText } : newTodo 
-            )
-        )
-    };
+            ) 
+        ); 
+    }; 
+
+    useEffect(() => {
+
+    }, []);
 
     return (
         <div className="todo-wrapper">
