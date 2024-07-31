@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
@@ -10,6 +10,8 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import { Paper } from '@mui/material'
 
 const TodoItem = ({ item, deleteTask, editTask }) => {
+    const [openDialog, setOpenDialog] = useState(false); 
+    const [isChecked, setIsChecked] = useState(false);
 
     return (
         <>
