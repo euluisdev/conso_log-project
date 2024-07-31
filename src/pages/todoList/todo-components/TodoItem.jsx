@@ -12,6 +12,10 @@ import { Paper } from '@mui/material'
 const TodoItem = ({ item, deleteTask, editTask }) => {
     const [openDialog, setOpenDialog] = useState(false); 
     const [isChecked, setIsChecked] = useState(false);
+    
+    const dialogHandler = () => { 
+        setOpenDialog(!openDialog);
+    };
 
     return (
         <>
