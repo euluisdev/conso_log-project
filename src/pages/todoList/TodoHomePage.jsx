@@ -54,7 +54,7 @@ const TodoHomePage = () => {
                         {
                             todos.map((item) => (
                                 <div key={item.id} className="todoItem">
-                                    <h1 className="sizee"><TodoItem item={item} deleteTask={deleteTask} /></h1>
+                                    <h1 className="sizee"><TodoItem item={item} deleteTask={deleteTask} editTask={editTask} /></h1>
                                 </div>
                             ))
                         }
