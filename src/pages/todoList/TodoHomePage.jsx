@@ -13,6 +13,11 @@ const TodoHomePage = () => {
         const newItem = {id: new Date().getTime(), text: item.text};
         setTodos([newItem, ...todos]) 
     };
+
+    const deleteTask = (id) => {
+        let filtered = todos.filter((item) => item.id !== id) 
+        setTodos(filtered);
+    };
     
     return (
         <div className="todo-wrapper">
