@@ -29,8 +29,8 @@ const TodoHomePage = () => {
     }; 
 
     useEffect(() => {
-
-    }, []);
+        localStorage.setItem('todos', JSON.stringify(todos));
+    }, [todos]);
 
     return (
         <div className="todo-wrapper">
