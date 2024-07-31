@@ -73,7 +73,6 @@ const TodoHomePage = () => {
                                 </div>
                             ))
                         }
-
                     </List>
                 </Grid>
             </Grid>
@@ -81,4 +80,4 @@ const TodoHomePage = () => {
     )
 }
 
-export default TodoHomePage;
+export default TodoHomePage;  
