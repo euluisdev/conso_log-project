@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 import { Paper } from '@mui/material'
+import EditDialog from './EditDialog';
 
 const TodoItem = ({ item, deleteTask, editTask }) => {
     const [openDialog, setOpenDialog] = useState(false);  
@@ -30,6 +31,7 @@ const TodoItem = ({ item, deleteTask, editTask }) => {
 
     return (
         <>
+            <EditDialog />
             <Paper>
                 <ListItem
                     secondaryAction={
