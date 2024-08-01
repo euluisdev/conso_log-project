@@ -13,8 +13,12 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const EditDialog = ({ editeTask, openDialog, dialogHandler, item }) => {
+const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
   const [editedText, setEditedText] = useState(); 
+
+  const TextHandler = () => {
+    editTask()
+  }
 
   return (
     <React.Fragment>
