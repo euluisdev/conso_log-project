@@ -14,7 +14,7 @@ const Transition = forwardRef(function Transition(props, ref) {
 });
 
 const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
-  const [editedText, setEditedText] = useState(); 
+  const [editedText, setEditedText] = useState(item.text); 
 
   const textHandler = () => {
     editTask(item.id, editedText);
@@ -23,16 +23,13 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
   }
 
   return (
-    <React.Fragment>
-      <Button variant="outlined" onClick={handleClickOpen}>
-        Slide in alert dialog
-      </Button>
       <Dialog
-        open={open}
+        open={openDialog}
+        onClose={dialogHandler}
         TransitionComponent={Transition}
         keepMounted
-        onClose={handleClose}
-        aria-describedby="alert-dialog-slide-description"
+        aria-describedby="alert-dialog-slide-description" 
+        fullWidth 
       >
         <DialogTitle>{`Edite sua tarefa:`}</DialogTitle>
         <DialogContent>
@@ -46,7 +43,6 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
           <Button onClick={textHandler}>Confirmar</Button>
         </DialogActions>
       </Dialog>
-    </React.Fragment>
   );
 };
 
