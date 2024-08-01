@@ -34,16 +34,16 @@ const EditDialog = () => {
         onClose={handleClose}
         aria-describedby="alert-dialog-slide-description"
       >
-        <DialogTitle>{"Use Google's location service?"}</DialogTitle>
+        <DialogTitle>{`Edite sua tarefa:`}</DialogTitle>
         <DialogContent>
           <DialogContentText id="alert-dialog-slide-description">
             Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running.
+            location data to Google, even when no apps are running. Trazer a task para cá
           </DialogContentText>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Disagree</Button>
-          <Button onClick={handleClose}>Agree</Button>
+          <Button onClick={handleClose}>Cancelar</Button>
+          <Button onClick={handleClose}>Confirmar</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>
