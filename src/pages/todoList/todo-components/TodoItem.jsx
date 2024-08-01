@@ -31,7 +31,7 @@ const TodoItem = ({ item, deleteTask, editTask }) => {
 
     return (
         <>
-            <EditDialog />
+            <EditDialog editeTask={editTask} openDialog={openDialog} dialogHandler={dialogHandler} item={item} />
             <Paper>
                 <ListItem
                     secondaryAction={
