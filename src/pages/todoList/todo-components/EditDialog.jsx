@@ -8,6 +8,7 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import Slide from '@mui/material/Slide';
+import { TextField } from '@mui/material';
 
 const Transition = forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -31,15 +32,15 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
         aria-describedby="alert-dialog-slide-description" 
         fullWidth 
       >
-        <DialogTitle>{`Edite sua tarefa:`}</DialogTitle>
-        <DialogContent>
-          <DialogContentText id="alert-dialog-slide-description">
-            Let Google help apps determine location. This means sending anonymous
-            location data to Google, even when no apps are running. Trazer a task para cá
-          </DialogContentText>
+        <DialogTitle className='dialogTxt'>{`Edite sua tarefa:`}</DialogTitle>
+        <DialogContent className='dialogContainer'>
+            <TextField 
+              fullWidth 
+              defaultValue={editedText}
+            />
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>Cancelar</Button>
+          <Button onClick={dialogHandler}>Cancelar</Button>
           <Button onClick={textHandler}>Confirmar</Button>
         </DialogActions>
       </Dialog>
