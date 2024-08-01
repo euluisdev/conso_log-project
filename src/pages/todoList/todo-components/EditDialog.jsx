@@ -11,7 +11,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-export default function AlertDialogSlide() {
+const EditDialog = () => {
   const [open, setOpen] = React.useState(false);
 
   const handleClickOpen = () => {
@@ -48,4 +48,6 @@ export default function AlertDialogSlide() {
       </Dialog>
     </React.Fragment>
   );
-}
+};
+
+export default EditDialog;
