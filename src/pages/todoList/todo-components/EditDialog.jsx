@@ -16,8 +16,10 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
   const [editedText, setEditedText] = useState(); 
 
-  const TextHandler = () => {
-    editTask()
+  const textHandler = () => {
+    editTask(item.id, editedText);
+
+    dialogHandler()
   }
 
   return (
@@ -41,7 +43,7 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={handleClose}>Cancelar</Button>
-          <Button onClick={handleClose}>Confirmar</Button>
+          <Button onClick={textHandler}>Confirmar</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>
