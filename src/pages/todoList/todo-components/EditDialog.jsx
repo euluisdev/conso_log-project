@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -12,15 +14,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 const EditDialog = () => {
-  const [open, setOpen] = React.useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const [editedText, setEditedText] = useState(); 
 
   return (
     <React.Fragment>
