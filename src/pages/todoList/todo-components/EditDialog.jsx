@@ -13,7 +13,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
-const EditDialog = () => {
+const EditDialog = ({ editeTask, openDialog, dialogHandler, item }) => {
   const [editedText, setEditedText] = useState(); 
 
   return (
