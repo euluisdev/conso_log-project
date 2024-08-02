@@ -1,3 +1,15 @@
 .itemText {
     color: blue;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }  
+
+.itemText span {
+    font-size: 1.5rem;
+}
+
+.itemBtn svg {
+    width: 2.5rem;
+    height: 3rem;
+}
