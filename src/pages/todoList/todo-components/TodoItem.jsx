@@ -32,7 +32,7 @@ const TodoItem = ({ item, deleteTask, editTask }) => {
     return (
         <>
             <EditDialog editTask={editTask} openDialog={openDialog} dialogHandler={dialogHandler} item={item} />
-            <Paper>
+            <Paper className='itemBtn'>
                 <ListItem
                     secondaryAction={
                         <IconButton onClick={() => deleteTask(item.id)} edge="end" aria-label="delete" >
