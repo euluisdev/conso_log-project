@@ -39,3 +39,12 @@
     text-align: justify;
     justify-content: center;
 }
+
+.todo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+    border-top: 1px solid blue;
+    background-color: rgba(0, 0, 0, 0.75);
+}
