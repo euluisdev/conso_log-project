@@ -37,7 +37,10 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
             <TextField 
               fullWidth 
               defaultValue={editedText} 
-              onChange={(e) => setEditedText(e.target.value.trim())}
+              onChange={(e) => setEditedText(e.target.value.trim())} 
+              InputProps={{ //another way to apply style with material-ui
+                style: { fontSize: 17, color: 'blue' } 
+              }}
             />
         </DialogContent>
         <DialogActions>
