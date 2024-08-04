@@ -30,6 +30,7 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
         keepMounted
         aria-describedby="alert-dialog-slide-description" 
         fullWidth 
+        disableScrollLock
       >
         <DialogTitle className='dialogTxt'>{`Edite sua tarefa:`}</DialogTitle>
         <DialogContent className='dialogContainer'>
