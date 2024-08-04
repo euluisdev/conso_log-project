@@ -1,11 +1,11 @@
-import React from 'react';
+import MoviesHomePage from "./MoviesHomePage";
 
 function Movies() {
   return (
     <div>
-      <h1>Morning, i'm Movies</h1>
+      <MoviesHomePage />
     </div>
   )
-}
+};
 
 export default Movies;
