@@ -24,3 +24,45 @@
 .double-text p {
     padding-top: 0.5rem;
 }
+
+.movies-txts {
+    flex: 1;
+}
+
+.movies-txts2 {
+    flex: 1;
+}
+
+.movies-txts,
+.movies-txts2 a {
+    color: blue;
+}
+
+.movies-app h2 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 60, 255);
+}
+
+.movies-app,
+.movies-txts p {
+    font-family: "Lato", sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.6;
+    text-align: justify;
+    color: #FFF;
+}
+
+.text-styled .emoji {
+    font-size: 1.8rem;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+}
+
+
+
+.nave-two {
+    background: linear-gradient(to top, #000000, rgba(28, 37, 49, 0.89), #000054);
+} 
