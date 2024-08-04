@@ -1,0 +1,26 @@
+.movies-app {
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00000083;
+}
+
+.double-text {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0rem 0rem 0rem;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
+    background-image: url(src/pages/movies/imovies-img/movie-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+.double-text p {
+    padding-top: 0.5rem;
+}
