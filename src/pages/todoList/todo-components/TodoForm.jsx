@@ -2,13 +2,13 @@ import { Button, Paper, TextField } from "@mui/material";
 import { useState } from "react";
 
 const TodoForm = ({ addTask }) => {
-    const [text, setText] = useState(''); 
+    const [text, setText] = useState('');
     const [id, setId] = useState(0);
 
     const TodoCreate = (text) => {
         if (!text.trim()) return;
 
-        const TodoObj = { text: text, id: id }; 
+        const TodoObj = { text: text, id: id };
         setId(id + 1);
         addTask(TodoObj);
         setText('');
@@ -16,17 +16,18 @@ const TodoForm = ({ addTask }) => {
 
     return (
         <Paper className="formContainer">
-            <div className="formContete">
+            <div className="formContente">
                 <TextField
-                    id="outlined-basic" 
-                    label='tarefas' 
+                    id="outlined-basic"
+                    label="Tarefas"
+                    variant="outlined"
                     onChange={(e) => setText(e.target.value)}
                     value={text}
-                    variant="outlined" 
-                    fullWidth  
+                    fullWidth
+                    required
                 />
-                <Button variant="text" onClick={() => TodoCreate(text)} >Add</Button>
             </div>
+            <Button variant="text" onClick={() => TodoCreate(text)} >Add</Button>
         </Paper>
     );
 };
