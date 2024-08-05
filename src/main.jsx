@@ -27,6 +27,7 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
           <Route path='movies' element={<Movies />}>
             <Route index element={<MoviesHomePage />} />
             <Route path=':id' element={<MoviesList />} />
+            <Route path='search' element={<MoviesSearch />} />
           </Route>
           <Route path='form' element={<FormSteps />} />
         </Route>
