@@ -12,6 +12,7 @@ import Movies from './pages/movies/Movies.jsx';
 // subcomponents of the Movies
 import MoviesHomePage from './pages/movies/MoviesHomePage.jsx'; 
 import MoviesList from './pages/movies/moviesPages/MoviesList.jsx';
+import MoviesSearch from './pages/movies/moviesPages/MoviesSearch.jsx';
 
 import './index.css';
 
