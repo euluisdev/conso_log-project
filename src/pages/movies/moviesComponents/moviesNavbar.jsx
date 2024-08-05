@@ -1,3 +1,4 @@
+import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 
@@ -13,7 +14,6 @@ const MoviesNavbar = () => {
         <input
             type="text"
             placeholder="Busque seu filme"
-            value={search}  //isso permite manipular o estado diretamente
             required
         />
         <button type="submit">
