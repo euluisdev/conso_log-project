@@ -1,3 +1,4 @@
+import MoviesNavbar from "./moviesComponents/MoviesNavbar";
 
 
 const MoviesHomePage = () => {
@@ -36,7 +37,7 @@ const MoviesHomePage = () => {
             </section>
 
             <section className="nave-two">
-
+                <MoviesNavbar />
             </section>
         </div>
     );

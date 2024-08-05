@@ -1,11 +1,11 @@
+import React from 'react'
 
-
-const moviesNavbar = () => {
+const MoviesNavbar = () => {
   return (
-    <div className="movies-navbar">
-      <h1></h1>
+    <div>
+      
     </div>
   )
 }
 
-export default moviesNavbar
+export default MoviesNavbar
