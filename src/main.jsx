@@ -11,6 +11,7 @@ import Movies from './pages/movies/Movies.jsx';
 
 // subcomponents of the Movies
 import MoviesHomePage from './pages/movies/MoviesHomePage.jsx'; 
+import MoviesList from './pages/movies/moviesPages/MoviesList.jsx';
 
 import './index.css';
 
@@ -25,6 +26,7 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
           <Route path='todolist' element={<TodoList />} />
           <Route path='movies' element={<Movies />}>
             <Route index element={<MoviesHomePage />} />
+            <Route path=':id' element={<MoviesList />} />
           </Route>
           <Route path='form' element={<FormSteps />} />
         </Route>
