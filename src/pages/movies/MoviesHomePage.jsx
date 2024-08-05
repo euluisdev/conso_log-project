@@ -1,3 +1,5 @@
+import { Outlet } from "react-router-dom";
+
 import MoviesNavbar from "./moviesComponents/MoviesNavbar";
 
 
@@ -38,6 +40,7 @@ const MoviesHomePage = () => {
 
             <section className="nave-two">
                 <MoviesNavbar />
+                <Outlet />
             </section>
         </div>
     );
