@@ -21,9 +21,12 @@ const MoviesBest = () => {
     }, [])
 
   return (
-    <div>
-      <h1>Hi, im movies best</h1>
-    </div>
+    <section className="movies-container">
+        <h2 className="title">Melhores Filmes:</h2> 
+        <div className="moviesContainer">
+            
+        </div>
+    </section>
   )
 }
 
