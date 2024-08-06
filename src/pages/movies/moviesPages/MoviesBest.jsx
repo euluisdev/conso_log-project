@@ -9,7 +9,7 @@ const MoviesBest = () => {
 
     const getTopRatedMovies = async (url) => {
         const res = await fetch(url);
-        const data = await res.jason();
+        const data = await res.json();
 
         setTopMovies(data.results);
     }; 
@@ -24,10 +24,19 @@ const MoviesBest = () => {
     <section className="movies-container">
         <h2 className="title">Melhores Filmes:</h2> 
         <div className="moviesContainer">
+            {
+                topMovies.length === 0 && <p>Carregando...</p>
+            }
+            {
+                topMovies.length > 0 && topMovies.map((movie, id) => 
+                    
+                        {<p key={id}>{movie}</p>}
             
+                )
+            }
         </div>
     </section>
-  )
-}
+  ); 
+};  
 
 export default MoviesBest;
