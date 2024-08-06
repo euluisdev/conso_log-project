@@ -7,7 +7,7 @@ import PageHome from './pages/home/PageHome.jsx';
 import Calculator from './pages/calculator/Calculator.jsx';
 import TodoList from './pages/todoList/TodoList.jsx';
 import FormSteps from './pages/stepsform/FormSteps.jsx';
-import Movies from './pages/movies/Movies.jsx';
+import MoviesHomePage from './pages/movies/MoviesHomePage.jsx';
 
 // subcomponents of the Movies
 import MoviesHomePage from './pages/movies/MoviesHomePage.jsx'; 
@@ -25,7 +25,7 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
           <Route path='/' element={<PageHome />} />
           <Route path='calculator' element={<Calculator />} />
           <Route path='todolist' element={<TodoList />} />
-          <Route path='movies' element={<Movies />}>
+          <Route path='movies' element={<MoviesHomePage />}>
             <Route index element={<MoviesHomePage />} />
             <Route path=':id' element={<MoviesList />} />
             <Route path='search' element={<MoviesSearch />} />
