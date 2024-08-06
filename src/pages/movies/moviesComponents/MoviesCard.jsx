@@ -1,5 +1,7 @@
 import { FaStar } from "react-icons/fa";
 
+import { Link } from "react-router-dom";
+
 const imageUrl = import.meta.env.VITE_IMG;
 
 const MoviesCard = ({ movie }) => {
@@ -10,6 +12,9 @@ const MoviesCard = ({ movie }) => {
       <p>
         <FaStar /> {movie.vote_average}
       </p>
+      {
+        <Link to={`/movie/${movie.id}`}>Detalhes</Link>
+      }
     </div>
   )
 }
