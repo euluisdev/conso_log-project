@@ -10,7 +10,7 @@ import FormSteps from './pages/stepsform/FormSteps.jsx';
 import MoviesHomePage from './pages/movies/MoviesHomePage.jsx';
 
 // subcomponents of the Movies
-import MoviesHomePage from './pages/movies/MoviesHomePage.jsx'; 
+import MoviesBest from './pages/movies/moviesPages/MoviesBest.jsx'; 
 import MoviesList from './pages/movies/moviesPages/MoviesList.jsx';
 import MoviesSearch from './pages/movies/moviesPages/MoviesSearch.jsx';
 
@@ -26,7 +26,7 @@ ReactDOM.createRoot(document.querySelector('#root')).render(
           <Route path='calculator' element={<Calculator />} />
           <Route path='todolist' element={<TodoList />} />
           <Route path='movies' element={<MoviesHomePage />}>
-            <Route index element={<MoviesHomePage />} />
+            <Route index element={<MoviesBest />} />
             <Route path=':id' element={<MoviesList />} />
             <Route path='search' element={<MoviesSearch />} />
           </Route>
