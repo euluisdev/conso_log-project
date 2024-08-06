@@ -1,3 +1,31 @@
+
 #movies-navbar {
     display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #06050a7c;
 }
+
+#movies-navbar h2 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0 4px 0;
+}
+
+#movies-navbar h2 svg {
+    color: blue;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+   
+#movies-navbar h2 a {
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 0.8rem; 
+}    
