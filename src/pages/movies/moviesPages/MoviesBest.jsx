@@ -1,18 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
-const moviesUrl = `${import.meta.env.VITE_API}`;
+const moviesURL = `${import.meta.env.VITE_API}`;
 const apiKey = `${import.meta.env.VITE_API_KEY}`;
 
 const MoviesBest = () => {
     const [topMovies, setTopMovies] = useState([]);
 
-    const getTopMovies = async (url) => {
+    const getTopRatedMovies = async (url) => {
         const res = await fetch(url);
         const data = await res.jason();
 
-        console.log(data);
+        setTopMovies(data.results);
     }; 
+
+    useEffect(() => {
+        const topRatedUrl = `${moviesURL}top_rated?${apiKey}`;
+
+        getTopRatedMovies(topRatedUrl);
+    }, [])
 
   return (
     <div>
