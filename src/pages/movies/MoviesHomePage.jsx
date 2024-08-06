@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
-
 import MoviesNavbar from "./moviesComponents/MoviesNavbar";
+
+import './style/MoviesImport.css';
 
 
 const MoviesHomePage = () => {
