@@ -31,7 +31,7 @@ const MoviesBest = () => {
             }
             {
                 topMovies.length > 0 && topMovies.map((movie, id) => 
-                    <MoviesCard />
+                    <MoviesCard key={movie.id} movie={movie} />
                 )
             }
         </div>
