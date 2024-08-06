@@ -30,7 +30,7 @@ const MoviesBest = () => {
             {
                 topMovies.length > 0 && topMovies.map((movie, id) => 
                     
-                        {<p key={id}>{movie}</p>}
+                        <p key={id}>{movie.title}</p>
             
                 )
             }
