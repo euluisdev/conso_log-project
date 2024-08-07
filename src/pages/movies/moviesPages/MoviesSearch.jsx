@@ -1,10 +1,11 @@
+import { useParams } from "react-router-dom";
 
 
 const searchURL = import.meta.env.VITE_SEARCH;  
 const apiKey = import.meta.env.VITE_API_KEY;  
 
 const MoviesSearch = () => {
-
+  const searchParams = useParams();
 
   return (
     <div className="movies-container">
