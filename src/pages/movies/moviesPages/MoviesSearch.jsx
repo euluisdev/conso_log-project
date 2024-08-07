@@ -1,6 +1,11 @@
 
 
+const searchURL = import.meta.env.VITE_SEARCH;  
+const apiKey = import.meta.env.VITE_API_KEY;  
+
 const MoviesSearch = () => {
+
+
   return (
     <div className="movies-container">
       <h2 className="title">
