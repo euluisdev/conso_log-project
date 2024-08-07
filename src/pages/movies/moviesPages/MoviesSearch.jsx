@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 
 
@@ -6,6 +7,8 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 const MoviesSearch = () => {
   const searchParams = useParams();
+
+  const [movies, setMovies] = useState([]);  
 
   return (
     <div className="movies-container">
