@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
+import MoviesCard from "../moviesComponents/MoviesCard"
+
 
 const searchURL = import.meta.env.VITE_SEARCH;  
 const apiKey = import.meta.env.VITE_API_KEY;  
