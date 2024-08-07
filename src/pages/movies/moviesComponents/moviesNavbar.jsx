@@ -24,11 +24,13 @@ const MoviesNavbar = () => {
             <BiCameraMovie /> CONSO.LOG Movies
         </Link>
     </h2>
-    <form>
+    <form onSubmit={handleSubmit}>
         <input
             type="text"
-            placeholder="Busque seu filme"
-            required
+            placeholder="Busque seu filme" 
+            onChange={(e) => setSearch(e.target.value)} 
+            value={search}  
+            required  
         />
         <button type="submit">
             <BiSearchAlt2 />
