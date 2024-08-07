@@ -1,11 +1,13 @@
 import { useState } from "react";
 
 import { BiCameraMovie, BiSearchAlt2 } from "react-icons/bi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const MoviesNavbar = () => {
     const [search, setSearch] = useState(''); 
+
+    const navigate = useNavigate(); 
 
   return (
     <nav id="movies-navbar">
