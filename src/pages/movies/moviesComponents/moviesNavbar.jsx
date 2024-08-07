@@ -9,6 +9,14 @@ const MoviesNavbar = () => {
 
     const navigate = useNavigate(); 
 
+    const handleSubmit = (e) => {
+        e.preventDefault(); 
+        if (!search) return;  
+
+        navigate(`search?q=${search}`);  
+        setSearch('');  
+    };  
+
   return (
     <nav id="movies-navbar">
     <h2>
