@@ -19,8 +19,10 @@ const MoviesSearch = () => {
   };  
 
   useEffect(() => {
+    const searchWidthQueryUrl = `${searchURL}?${apiKey}&query=${query}`;  
     
-  }, []);
+    getSearchedMovies(searchWidthQueryUrl);  
+  }, [query]);  
 
   return (
     <div className="movies-container">
@@ -36,9 +38,9 @@ const MoviesSearch = () => {
             <MoviesCard key={movie.id} movie={movie} />
           ) 
         }
-      </div>
-    </div>
-  )
-}
+      </div> 
+    </div>  
+  );  
+};
 
-export default MoviesSearch;
+export default MoviesSearch;  
