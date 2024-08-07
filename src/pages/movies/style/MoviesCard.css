@@ -1,4 +1,4 @@
-.moviesCard {
+.moviesCard { 
     flex: 1 1 calc(15% - 16px);
     box-sizing: border-box;
     display: flex;
@@ -9,10 +9,50 @@
     min-width: 15rem;
     max-width: 20rem;
     margin-bottom: 3rem;
-    border: 0.1rem solid blue;
+    border: 0.1rem solid blue; 
     overflow: hidden;
     background-color: #111;
     padding: 0.5rem 0.5rem;
     justify-content: space-around;
-}
+} 
 
+.movieCard img { 
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+}  
+ 
+.movieCard h2 {
+    margin: 1rem 0 0;
+    font-size: 1.6rem;
+} 
+ 
+.movieCard p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+} 
+  
+.movieCard svg {
+    color: blue;
+} 
+
+.movieCard a {
+    background-color: blue;
+    border: 2px solid blue;
+    color: #000;
+    width: 100%;
+    align-items: center;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+} 
+
+.movieCard a:hover {
+    background-color: transparent;
+    color: blue; 
+}  
+  
