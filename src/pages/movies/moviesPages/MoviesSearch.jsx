@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 
@@ -17,6 +17,10 @@ const MoviesSearch = () => {
    
       setMovies(data.results); 
   };  
+
+  useEffect(() => {
+    
+  }, []);
 
   return (
     <div className="movies-container">
