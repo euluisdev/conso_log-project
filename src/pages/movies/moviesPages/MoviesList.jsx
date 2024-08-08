@@ -29,6 +29,13 @@ const MoviesList = () => {
     
     getMovie(movieUrl);  
   }, []);  
+
+  const formatCurrency = (number) => {
+    return number.toLocaleString('en-US', {
+      style: 'currency', 
+      currency: 'USD', 
+    });  
+  };  
  
   return ( 
     <div className="moviesList">  
