@@ -1,4 +1,9 @@
- 
+import {
+  BsGraphUp,
+  BsWallet2,
+  BsHourglassSplit,
+  BsFillFileEarmarkTextFill
+} from 'react-icons/bs';
 
 const MoviesList = () => {
   return (
