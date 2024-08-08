@@ -1,4 +1,4 @@
-
+import { useState } from 'react';  
 import { useParams } from 'react-router-dom';  
   
 import { 
@@ -16,7 +16,7 @@ const apiKey = import.meta.env.VITE_API_KEY;
 const MoviesList = () => {
   const { id } = useParams();  
 
-  
+  const [movie, setMovie] = useState(null);  
 
   return (
     <div>
