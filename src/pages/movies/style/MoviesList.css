@@ -1,3 +1,19 @@
 .moviesList {
     display: flex;
-}
+    color: blue;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    max-width: 90rem;
+    margin: 0 auto;
+}  
+
+.movie-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10rem;
+}   
+
