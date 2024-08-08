@@ -1,4 +1,4 @@
-import { useState } from 'react';  
+import { useEffect, useState } from 'react';  
 import { useParams } from 'react-router-dom';  
   
 import { 
@@ -22,10 +22,14 @@ const MoviesList = () => {
     const data = await res.json();  
 
     setMovie(data);  
-  }
+  };  
 
-  return (
-    <div>
+  useEffect(() => {
+    const movieUrl = `${moviesURL}${id}?${apiKey}`;  
+  }, []);  
+ 
+  return ( 
+    <div> 
       <h1>Hi, im List</h1>
     </div>
   )
