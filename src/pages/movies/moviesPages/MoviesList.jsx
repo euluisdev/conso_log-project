@@ -10,6 +10,9 @@ import {
 
 import MoviesCard from '../moviesComponents/MoviesCard';  
 
+const moviesURL = `${import.meta.env.VITE_API}`;  
+const apiKey = import.meta.env.VITE_API_KEY;  
+
 const MoviesList = () => {
   return (
     <div>
