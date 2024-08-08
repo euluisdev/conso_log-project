@@ -14,6 +14,10 @@ const moviesURL = `${import.meta.env.VITE_API}`;
 const apiKey = import.meta.env.VITE_API_KEY;  
 
 const MoviesList = () => {
+  const { id } = useParams();  
+
+  
+
   return (
     <div>
       <h1>Hi, im List</h1>
