@@ -26,11 +26,14 @@ const MoviesList = () => {
 
   useEffect(() => {
     const movieUrl = `${moviesURL}${id}?${apiKey}`;  
+    
+    getMovie(movieUrl);  
   }, []);  
  
   return ( 
-    <div> 
-      <h1>Hi, im List</h1>
+    <div> {movie &&
+      <h1>{movie.title}</h1>
+      }
     </div>
   )
 }
