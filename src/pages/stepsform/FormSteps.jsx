@@ -1,6 +1,8 @@
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
-function FormSteps() {
+function FormSteps() {  
+  const formComponents = [];
+
   return (
     <div className="form-app">
       <div className="form-header">
