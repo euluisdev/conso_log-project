@@ -6,6 +6,7 @@ const useForm = () => {
 
   return {
     currentStep, 
+    currentComponent: steps[currentStep], 
   }
 };  
 
