@@ -25,10 +25,10 @@ function FormSteps() {
       </div>  
       <div className="form-container">
         <p>etapas</p>
-        <form>
+        <form onSubmit={(e) => changeSteps(currentStep + 1, e)}>
           <div className="form-inputs"></div>
           <div className="actions">
-            <button type="button">  
+            <button type="button" onClick={() => changeSteps(currentStep - 1)}>  
               <GrFormPrevious />
               <span>Voltar</span>
             </button>
