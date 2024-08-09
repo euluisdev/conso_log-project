@@ -5,12 +5,15 @@ function FormSteps() {
     <div className="form-app">
       <div className="form-header">
         <h2>Deixe sua avaliação:</h2>
-        <p>Ficamos Felizes com seu acesso, utilize o formulário para avaliar nossa Aplicação.</p>
+        <p>
+          Ficamos Felizes com seu acesso, utilize o formulário para avaliar nossa Aplicação. 
+        </p>
       </div>  
       <div className="form-container">
         <p>etapas</p>
         <form>
-          <div className="action">
+          <div className="form-inputs"></div>
+          <div className="actions">
             <button type="button">  
               <GrFormPrevious />
               <span>Voltar</span>
