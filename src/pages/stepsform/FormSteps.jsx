@@ -1,4 +1,4 @@
-
+import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 
 function FormSteps() {
   return (
@@ -11,8 +11,14 @@ function FormSteps() {
         <p>etapas</p>
         <form>
           <div className="action">
-            <button type="button">Voltar</button>
-            <button type="submit">Avançar</button>
+            <button type="button">  
+              <GrFormPrevious />
+              <span>Voltar</span>
+            </button>
+            <button type="submit">
+              <span>Avançar</span>
+              <GrFormNext />
+            </button>
           </div>
         </form>
       </div>
