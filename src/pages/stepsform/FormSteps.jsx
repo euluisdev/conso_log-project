@@ -1,9 +1,15 @@
-import React from 'react'
+
 
 function FormSteps() {
   return (
-    <div>
-      <h2>Let me splain guy, im Form Steps</h2>
+    <div className="form-app">
+      <div className="form-header">
+        <h2>Deixe sua avaliação:</h2>
+        <p>Ficamos Felizes com seu acesso, utilize o formulário para avaliar nossa Aplicação.</p>
+      </div>  
+      <div className="form-container">
+        
+      </div>
     </div>
   )
 }
