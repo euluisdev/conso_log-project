@@ -1,7 +1,14 @@
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";
+import FormUser from "./form-components/FormUser";
+import FormReview from "./form-components/FormReview";
+import FormThanks from "./form-components/FormThanks";
 
 function FormSteps() {  
-  const formComponents = [];
+  const formComponents = [ 
+    <FormUser />, 
+    <FormReview />, 
+    <FormThanks />,  
+  ];  
 
   return (
     <div className="form-app">
