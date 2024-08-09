@@ -3,12 +3,17 @@ import FormUser from "./form-components/FormUser";
 import FormReview from "./form-components/FormReview";
 import FormThanks from "./form-components/FormThanks";
 
+//hook
+import useForm from "./hooks/useForm";
+
 function FormSteps() {  
   const formComponents = [ 
     <FormUser />, 
     <FormReview />, 
     <FormThanks />,  
   ];  
+
+  const {currentStep, currentComponent} = useForm(formComponents);  
 
   return (
     <div className="form-app">
