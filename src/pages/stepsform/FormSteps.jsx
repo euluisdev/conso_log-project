@@ -13,7 +13,7 @@ function FormSteps() {
     <FormThanks />,  
   ];  
 
-  const {currentStep, currentComponent} = useForm(formComponents);  
+  const {currentStep, currentComponent, changeSteps, isLastStep, isFirstStep } = useForm(formComponents);  
 
   return (
     <div className="form-app">
