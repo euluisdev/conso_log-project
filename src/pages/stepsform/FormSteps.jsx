@@ -28,7 +28,7 @@ function FormSteps() {
       <div className="form-container">
         <p>etapas</p>
         <form onSubmit={(e) => changeSteps(currentStep + 1, e)}>
-          <div className="form-inputs"></div>
+          <div className="form-inputs">{currentComponent}</div>
           <div className="actions">
             {
               !isFirstStep && (
