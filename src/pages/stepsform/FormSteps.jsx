@@ -10,7 +10,7 @@ import useForm from "./hooks/useForm";
 
 import "./form-styles/FormImputs.css";
 
-function FormSteps() {  
+const FormSteps = () => {  
   const formComponents = [ 
     <FormUser />, 
     <FormReview />, 
