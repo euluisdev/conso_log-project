@@ -1,17 +1,19 @@
-import { GrFormNext, GrFormPrevious } from "react-icons/gr";
-import FormUser from "./form-components/FormUser";
-import FormReview from "./form-components/FormReview";
-import FormThanks from "./form-components/FormThanks";
+import { GrFormNext, GrFormPrevious } from "react-icons/gr";  
+import { FiSend } from "react-icons/fi";  
+
+import FormUser from "./form-components/FormUser";  
+import FormReview from "./form-components/FormReview";  
+import FormThanks from "./form-components/FormThanks";  
 
 //hook
-import useForm from "./hooks/useForm";
+import useForm from "./hooks/useForm";  
 
-function FormSteps() {
-  const formComponents = [
-    <FormUser />,
-    <FormReview />,
-    <FormThanks />,
-  ];
+function FormSteps() {  
+  const formComponents = [ 
+    <FormUser />, 
+    <FormReview />, 
+    <FormThanks />, 
+  ];  
 
   const { currentStep, currentComponent, changeSteps, isLastStep, isFirstStep } = useForm(formComponents);
 
@@ -44,7 +46,8 @@ function FormSteps() {
                 </button>
               ) : (
                 <button type="button">  
-                  <span>Enviar</span>                  
+                  <span>Enviar</span>     
+                  <FiSend />             
                 </button>
               )
             }
