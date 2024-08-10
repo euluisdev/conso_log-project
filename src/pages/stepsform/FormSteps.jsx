@@ -8,6 +8,8 @@ import FormThanks from "./form-components/FormThanks";
 //hook
 import useForm from "./hooks/useForm";  
 
+import "./form-styles/FormImputs.css";
+
 function FormSteps() {  
   const formComponents = [ 
     <FormUser />, 
