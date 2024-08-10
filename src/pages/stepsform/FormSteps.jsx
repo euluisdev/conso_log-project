@@ -6,36 +6,48 @@ import FormThanks from "./form-components/FormThanks";
 //hook
 import useForm from "./hooks/useForm";
 
-function FormSteps() {  
-  const formComponents = [ 
-    <FormUser />, 
-    <FormReview />, 
-    <FormThanks />,  
-  ];  
+function FormSteps() {
+  const formComponents = [
+    <FormUser />,
+    <FormReview />,
+    <FormThanks />,
+  ];
 
-  const {currentStep, currentComponent, changeSteps, isLastStep, isFirstStep } = useForm(formComponents);  
+  const { currentStep, currentComponent, changeSteps, isLastStep, isFirstStep } = useForm(formComponents);
 
   return (
     <div className="form-app">
       <div className="form-header">
         <h2>Deixe sua avaliação:</h2>
         <p>
-          Ficamos Felizes com seu acesso, utilize o formulário para avaliar nossa Aplicação. 
+          Ficamos Felizes com seu acesso, utilize o formulário para avaliar nossa Aplicação.
         </p>
-      </div>  
+      </div>
       <div className="form-container">
         <p>etapas</p>
         <form onSubmit={(e) => changeSteps(currentStep + 1, e)}>
           <div className="form-inputs"></div>
           <div className="actions">
-            <button type="button" onClick={() => changeSteps(currentStep - 1)}>  
-              <GrFormPrevious />
-              <span>Voltar</span>
-            </button>
-            <button type="submit">
-              <span>Avançar</span>
-              <GrFormNext />
-            </button>
+            {
+              !isFirstStep && (
+                <button type="button" onClick={() => changeSteps(currentStep - 1)}>
+                  <GrFormPrevious />
+                  <span>Voltar</span>
+                </button>
+              )
+            }
+            {
+              !isLastStep ? (
+                <button type="submit">
+                  <span>Avançar</span>
+                  <GrFormNext />
+                </button>
+              ) : (
+                <button type="button">  
+                  <span>Enviar</span>                  
+                </button>
+              )
+            }
           </div>
         </form>
       </div>
