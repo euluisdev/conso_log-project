@@ -1,4 +1,5 @@
-import { AiOutlineStar, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineStar, AiOutlineUser } from "react-icons/ai";  
+import { FiSend } from "react-icons/fi";
 
 
 const FormHandlerSteps = ({ currentStep }) => {
@@ -13,7 +14,8 @@ const FormHandlerSteps = ({ currentStep }) => {
             <p>Avaliação</p>
         </div>
         <div className="step">
-            <p>Envio</p>
+            <FiSend />  
+            <p>Envio</p>  
         </div>
     </div>
   );
