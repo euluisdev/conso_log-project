@@ -10,7 +10,37 @@
     overflow: hidden; 
     margin-top: 3rem; 
 }  
+ 
+.steps::after { 
+    content: "";
+    width: 70%;
+    border-bottom: 1px solid #FFF;
+    position: absolute;
+    top: 3.7rem;
+} 
+ 
+.step {  
+    text-align: center;
+    border-radius: 10px;
+    background-color: gray;
+    z-index: 1;
+    width: 12rem;
+    padding: 0.5rem;
+} 
+
+.step svg {
+    font-size: 2.5rem;
+    margin-bottom: 0.3rem;
+}  
 
 .active {
-    background-color: red;
-}
+    color: blue;
+    font-weight: bold;
+}  
+
+.active p {
+    color: blue; 
+    font-weight: bold;  
+}   
+
+  
