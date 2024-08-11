@@ -1,18 +1,20 @@
+import { AiOutlineStar, AiOutlineUser } from "react-icons/ai";
 
 
 const FormHandlerSteps = ({ currentStep }) => {
   return (
     <div className="steps">
         <div className="step active">
+            <AiOutlineUser />
             <p>Identificação</p>
         </div>
-        <div className="step">
+        <div className="step">  
+            <AiOutlineStar />  
             <p>Avaliação</p>
         </div>
         <div className="step">
             <p>Envio</p>
         </div>
-      
     </div>
   );
 };   
