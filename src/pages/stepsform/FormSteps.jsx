@@ -2,8 +2,9 @@ import { GrFormNext, GrFormPrevious } from "react-icons/gr";
 import { FiSend } from "react-icons/fi";  
 
 import FormUser from "./form-components/FormUser";  
-import FormReview from "./form-components/FormReview";  
-import FormThanks from "./form-components/FormThanks";  
+import FormReview from "./form-components/FormReview";   
+import FormThanks from "./form-components/FormThanks";    
+import FormHandlerSteps from "./form-components/FormHandlerSteps";  
 
 //hook
 import useForm from "./hooks/useForm";  
@@ -28,7 +29,7 @@ const FormSteps = () => {
         </p>
       </div>
       <div className="form-container">
-        <p>etapas</p>
+        {FormHandlerSteps}
         <form onSubmit={(e) => changeSteps(currentStep + 1, e)}>
           <div className="form-inputs">{currentComponent}</div>
           <div className="actions">
