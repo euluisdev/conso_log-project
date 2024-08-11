@@ -2,10 +2,20 @@
 
 const FormReview = () => {
   return (
-    <div>
-      <h1>Review form</h1>
-    </div>
-  )
-}
+    <div className="form-review">  
+      <div className="form-control score-container">
+        <label className="radio-container">
+          <input 
+            type="radio" 
+            value="unsatisfield" 
+            name="review" 
+          />
+          <p>Insatisfeito</p>
+        </label>
+      </div>      
+    </div> 
+  );  
+};  
 
-export default FormReview;
+export default FormReview;  
+
