@@ -1,6 +1,6 @@
 
 
-const FormHandlerSteps = () => {
+const FormHandlerSteps = ({ currentStep }) => {
   return (
     <div>
       

@@ -29,7 +29,7 @@ const FormSteps = () => {
         </p>
       </div>
       <div className="form-container">
-        {FormHandlerSteps}
+        <FormHandlerSteps currentStep={currentStep} />
         <form onSubmit={(e) => changeSteps(currentStep + 1, e)}>
           <div className="form-inputs">{currentComponent}</div>
           <div className="actions">
