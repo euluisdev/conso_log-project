@@ -1,5 +1,11 @@
-
-
+import { 
+  BsFillEmojiFrownFill, 
+  BsFillEmojiHeartEyesFill, 
+  BsFillEmojiNeutralFill, 
+  BsFillEmojiSmileFill
+} from "react-icons/bs";  
+ 
+ 
 const FormReview = () => {
   return (
     <div className="form-review">  
@@ -10,6 +16,7 @@ const FormReview = () => {
             value="unsatisfield" 
             name="review" 
           />
+          <BsFillEmojiFrownFill />
           <p>Insatisfeito</p>
         </label>  
         <label className="radio-container">
@@ -18,6 +25,7 @@ const FormReview = () => {
             value="neutral"
             name="review"
           />
+          <BsFillEmojiNeutralFill />
           <p>Poderia ser melhor</p>
         </label>
         <label className="radio-container">
@@ -26,6 +34,7 @@ const FormReview = () => {
             value="satisfied"
             name="review"
           />
+          <BsFillEmojiSmileFill />
           <p>Satisfeito</p>
         </label>
         <label className="radio-container">
@@ -34,6 +43,7 @@ const FormReview = () => {
             value="very_satisfied"
             name="review"
           />
+          <BsFillEmojiHeartEyesFill />
           <p>Muito Satisfeito</p>
         </label>
       </div>      
