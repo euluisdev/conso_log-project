@@ -24,9 +24,9 @@ const FormSteps = () => {
   const [data, setData] = useState(formAnswer);
 
   const formComponents = [ 
-    <FormUser />, 
-    <FormReview />, 
-    <FormThanks />, 
+    <FormUser data={data} />, 
+    <FormReview data={data} />, 
+    <FormThanks data={data} />, 
   ];  
 
   const { currentStep, currentComponent, changeSteps, isLastStep, isFirstStep } = useForm(formComponents);
