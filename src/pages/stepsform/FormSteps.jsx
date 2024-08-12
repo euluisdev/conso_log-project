@@ -30,8 +30,8 @@ const FormSteps = () => {
   };
 
   const formComponents = [ 
-    <FormUser data={data} />, 
-    <FormReview data={data} />, 
+    <FormUser data={data} updateFieldHandler={updateFieldHandler} />, 
+    <FormReview data={data} updateFieldHandler={updateFieldHandler} />, 
     <FormThanks data={data} />, 
   ];  
 
