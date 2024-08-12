@@ -18,3 +18,14 @@
     color: blue;
 }  
 
+.review-data {
+    text-align: left; 
+} 
+
+.review-data svg{
+    margin-left: 0.5rem; 
+}
+
+.review-data span {
+    font-weight: bold; 
+}  
