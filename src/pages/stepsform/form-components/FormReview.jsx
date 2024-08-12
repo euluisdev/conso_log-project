@@ -6,7 +6,7 @@ import {
 } from "react-icons/bs";  
  
  
-const FormReview = () => {
+const FormReview = ({ data, updateFieldHandler }) => {
   return (
     <div className="form-review">  
       <div className="form-control score-container">
@@ -15,6 +15,9 @@ const FormReview = () => {
             type="radio" 
             value="unsatisfield" 
             name="review" 
+            required 
+            checked={data.review === "unsatisfied"}
+            onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
           <BsFillEmojiFrownFill />
           <p>Insatisfeito</p>
@@ -22,8 +25,11 @@ const FormReview = () => {
         <label className="radio-container">
           <input
             type="radio"
-            value="neutral"
-            name="review"
+            value="neutral" 
+            name="review"  
+            required
+            checked={data.review === 'neutral'}
+            onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
           <BsFillEmojiNeutralFill />
           <p>Poderia ser melhor</p>
@@ -32,7 +38,10 @@ const FormReview = () => {
           <input
             type="radio"
             value="satisfied"
-            name="review"
+            name="review"  
+            required
+            checked={data.review === 'satisfied'} 
+            onChange={(e) => updateFieldHandler('review', e.target.value)}  
           />
           <BsFillEmojiSmileFill />
           <p>Satisfeito</p>
@@ -41,7 +50,10 @@ const FormReview = () => {
           <input
             type="radio"
             value="very_satisfied"
-            name="review"
+            name="review"  
+            required
+            checked={data.review === 'very_satisfied'}
+            onChange={(e) => updateFieldHandler('review', e.target.value)}
           />
           <BsFillEmojiHeartEyesFill />
           <p>Muito Satisfeito</p>
@@ -53,8 +65,10 @@ const FormReview = () => {
           name="comment" 
           id="comment"  
           placeholder="Conte como foi sua experiência..."
-          /* required */
-        ></textarea>
+          required 
+          value={data.comment || ''} 
+          onChange={(e) => updateFieldHandler('comment', e.target.value)}  
+        ></textarea> 
       </div> 
     </div> 
   );  
