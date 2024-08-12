@@ -23,6 +23,12 @@ const formAnswer = {
 const FormSteps = () => {  
   const [data, setData] = useState(formAnswer);
 
+  const updateFieldHandler = (key, value) => {
+    setData((prev) => {
+      return { ...prev, [key]: value };
+    });
+  };
+
   const formComponents = [ 
     <FormUser data={data} />, 
     <FormReview data={data} />, 
