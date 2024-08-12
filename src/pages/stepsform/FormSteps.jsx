@@ -13,10 +13,15 @@ import { useState } from "react";
 
 import "./form-styles/FormImputs.css";
 
-
+const formAnswer = {
+  name: "",
+  email: "", 
+  review: "", 
+  comment: "", 
+};
 
 const FormSteps = () => {  
-  const [data, setData] = useState();
+  const [data, setData] = useState(formAnswer);
 
   const formComponents = [ 
     <FormUser />, 
