@@ -48,7 +48,7 @@ const FormReview = () => {
         </label>
       </div>     
       <div className="form-control">
-        <label htmlFor="comment">Comentário</label>  
+        <label className="label-comment" htmlFor="comment">Comentário</label>  
         <textarea 
           name="comment" 
           id="comment"  
