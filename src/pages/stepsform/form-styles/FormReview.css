@@ -1,3 +1,41 @@
-.form-control.score-container {
-    flex-direction: row;
+
+.form-review { 
+    margin-top: -5rem; 
+    gap: 0rem;   
+    justify-content: center ;
+    padding-bottom: 1rem; 
+}  
+
+.form-control {
+    margin-bottom: -2rem;  
+}  
+
+.form-control.score-container { 
+    flex-direction: row;  
+    gap: 0rem;
+    justify-content: center; 
+    padding-bottom: 1rem; 
+}  
+
+.form-control textarea {
+    background-color: black;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.score-container svg {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+.score-container svg:hover {
+    fill: blue;
+}
+
+.score-container input:checked ~ svg {
+    fill: blue;
 }
