@@ -46,7 +46,16 @@ const FormReview = () => {
           <BsFillEmojiHeartEyesFill />
           <p>Muito Satisfeito</p>
         </label>
-      </div>      
+      </div>     
+      <div className="form-control">
+        <label htmlFor="comment">Comentário</label>  
+        <textarea 
+          name="comment" 
+          id="comment"  
+          placeholder="Conte como foi sua experiência..."
+          /* required */
+        ></textarea>
+      </div> 
     </div> 
   );  
 };  
