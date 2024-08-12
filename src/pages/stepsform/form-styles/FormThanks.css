@@ -2,3 +2,19 @@
 .thanks-container {
     text-align: center;  
 } 
+
+.thanks-container p { 
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.thanks-container h2 {
+    margin-bottom: 2rem;
+} 
+
+.thanks-container h3{
+    margin-bottom: 1rem 0;
+    font-size: 1.8rem;
+    color: blue;
+}  
+
