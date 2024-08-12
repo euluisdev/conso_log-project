@@ -1,17 +1,23 @@
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";  
 import { FiSend } from "react-icons/fi";  
 
+//components
 import FormUser from "./form-components/FormUser";  
 import FormReview from "./form-components/FormReview";   
 import FormThanks from "./form-components/FormThanks";    
 import FormHandlerSteps from "./form-components/FormHandlerSteps";  
 
-//hook
+//hooks
 import useForm from "./hooks/useForm";  
+import { useState } from "react";
 
 import "./form-styles/FormImputs.css";
 
+
+
 const FormSteps = () => {  
+  const [data, setData] = useState();
+
   const formComponents = [ 
     <FormUser />, 
     <FormReview />, 
