@@ -1,4 +1,9 @@
-
+import { 
+  BsFillEmojiFrownFill, 
+  BsFillEmojiHeartEyesFill, 
+  BsFillEmojiNeutralFill, 
+  BsFillEmojiSmileFill
+} from "react-icons/bs"; 
 
 const FormThanks = () => {
   return (
