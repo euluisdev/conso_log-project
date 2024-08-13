@@ -21,7 +21,8 @@ const formAnswer = {
 };
 
 const FormSteps = () => {  
-  const [data, setData] = useState(formAnswer);
+  const [data, setData] = useState(formAnswer); 
+  const [openModal, setOpenModal] = useState(false);
 
   const updateFieldHandler = (key, value) => {
     setData((prev) => {
