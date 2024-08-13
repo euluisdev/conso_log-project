@@ -1,5 +1,6 @@
 import { GrFormNext, GrFormPrevious } from "react-icons/gr";  
 import { FiSend } from "react-icons/fi";  
+import { Modal, Box, Typography, Button } from '@mui/material';
 
 //components
 import FormUser from "./form-components/FormUser";  
