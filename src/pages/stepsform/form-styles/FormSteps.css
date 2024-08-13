@@ -70,12 +70,12 @@ h2 {
     align-items: center;
     transition: 0.8s;
     background-color: #dfdfdf;
-    color: gray;
+    color: rgb(40, 40, 40);
     margin-top: 1rem;
 }  
   
 .actions button:hover {
-    background-color: gray;
-    color: #dfdfdf;
+    background-color: rgb(40, 40, 40);
+    color: blue;
 }
      
