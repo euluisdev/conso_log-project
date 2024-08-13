@@ -23,9 +23,14 @@ const formAnswer = {
 
 const FormSteps = () => {  
   const [data, setData] = useState(formAnswer); 
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);  
 
-  const updateFieldHandler = (key, value) => {
+  const formReset = () => {
+    setData(formAnswer);  
+    changeSteps(0);  
+  };  
+ 
+  const updateFieldHandler = (key, value) => { 
     setData((prev) => {
       return { ...prev, [key]: value };
     });
@@ -55,7 +60,10 @@ const FormSteps = () => {
 /*     alert(`Olá ${data.name}, sua mensagem foi enviada com sucesso! Obrigado.`);   */
   };  
 
-  const handleClose = () => setOpen(false);  
+  const handleClose = () => {
+    setOpen(false); 
+    formReset()
+  };  
 
   return (
     <div className="form-app">
