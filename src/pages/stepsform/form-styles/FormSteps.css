@@ -27,7 +27,7 @@ h2 {
     max-width: 40%;
     margin: 0 auto;
     padding: 0.5rem;
-    background-color: gray;
+    background-color: rgb(40, 40, 40);
     box-shadow: rgb(0, 0, 255) 0px 5px 59px 9px;
 }
 
