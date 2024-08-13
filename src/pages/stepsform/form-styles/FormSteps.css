@@ -1,7 +1,7 @@
 .form-app {
     color: #FFF;
-    max-height: 100%;
-    width: 100%;
+    height: 100vw;
+    width: 100vw;
     box-sizing: border-box;
     background-color: rgba(37, 37, 37, 0.5);
     padding: 12rem 0 8rem 0;
@@ -79,3 +79,11 @@ h2 {
     color: blue;
 }
      
+
+.text-tecnic {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
