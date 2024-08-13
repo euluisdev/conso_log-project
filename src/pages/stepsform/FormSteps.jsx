@@ -53,7 +53,7 @@ const FormSteps = () => {
     setOpenModal(true); 
   };  
 
-  const handleClose = () => setOpen(false);  
+  const handleClose = () => setOpenModal(false);  
 
   return (
     <div className="form-app">
@@ -64,7 +64,7 @@ const FormSteps = () => {
         </p>
       </div>
 
-      <Modal open={open} onClose={handleClose}>
+      <Modal openModal={openModal} onClose={handleClose}>
       <Box sx={{ p: 8, backgroundColor: 'white', borderRadius: 2 }}>
         <Typography variant="h2" component="h2">
           Sucesso!
