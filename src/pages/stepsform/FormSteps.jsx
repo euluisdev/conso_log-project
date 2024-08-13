@@ -63,6 +63,19 @@ const FormSteps = () => {
           Ficamos Felizes com seu acesso, utilize o formulário para avaliar nossa Aplicação.
         </p>
       </div>
+
+      <Modal open={open} onClose={handleClose}>
+      <Box sx={{ p: 8, backgroundColor: 'white', borderRadius: 2 }}>
+        <Typography variant="h2" component="h2">
+          Sucesso!
+        </Typography>
+        <Typography variant="h3" sx={{ mt: 2 }}>
+          Olá {data.name}, sua mensagem foi enviada com sucesso! Obrigado.
+        </Typography>
+        <Button sx={{ p: 8, fontSize: '2rem',  }} onClick={handleClose}>Fechar</Button>
+      </Box>
+      </Modal>
+
       <div className="form-container">
         <FormHandlerSteps currentStep={currentStep} />
         <form onSubmit={(e) => changeSteps(currentStep + 1, e)}>
