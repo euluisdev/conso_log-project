@@ -23,7 +23,7 @@ const formAnswer = {
 
 const FormSteps = () => {  
   const [data, setData] = useState(formAnswer); 
-  const [openModal, setOpenModal] = useState(false);
+  const [open, setOpen] = useState(false);
 
   const updateFieldHandler = (key, value) => {
     setData((prev) => {
@@ -45,15 +45,17 @@ const FormSteps = () => {
     isFirstStep  
   } = useForm(formComponents); 
 
-  const handleSendMessageWpp = () => {
-    const message = `Nome: ${data.name}\nEmail: ${data.email}\nSatisfação: ${data.review}\nComentário: ${data.comment}`;   
-    const whatsappUrl = `https://api.whatsapp.com/send?phone=+5581998136237&text=${encodeURIComponent(message)}`;  
-    window.open(whatsappUrl, "_blank");  
+  const handleSend = () => {
+    const message = `Nome: ${data.name}\nEmail: ${data.email}\nSatisfação: ${data.review}\nComentário: ${data.comment}`;
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+5581998136237&text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
 
-    setOpenModal(true); 
+    setOpen(true);
+
+/*     alert(`Olá ${data.name}, sua mensagem foi enviada com sucesso! Obrigado.`);   */
   };  
 
-  const handleClose = () => setOpenModal(false);  
+  const handleClose = () => setOpen(false);  
 
   return (
     <div className="form-app">
@@ -64,7 +66,7 @@ const FormSteps = () => {
         </p>
       </div>
 
-      <Modal openModal={openModal} onClose={handleClose}>
+      <Modal open={open} onClose={handleClose}>
       <Box sx={{ p: 8, backgroundColor: 'white', borderRadius: 2 }}>
         <Typography variant="h2" component="h2">
           Sucesso!
@@ -96,7 +98,7 @@ const FormSteps = () => {
                   <GrFormNext />
                 </button>
               ) : (
-                <button type="button" onClick={handleSendMessageWpp}>  
+                <button type="button" onClick={handleSend}>  
                   <span>Enviar</span>     
                   <FiSend />             
                 </button>
