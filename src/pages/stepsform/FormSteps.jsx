@@ -52,6 +52,8 @@ const FormSteps = () => {
     setOpenModal(true); 
   };  
 
+  const handleClose = () => setOpen(false);  
+
   return (
     <div className="form-app">
       <div className="form-header">
