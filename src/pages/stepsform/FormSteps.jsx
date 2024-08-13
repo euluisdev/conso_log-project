@@ -36,7 +36,21 @@ const FormSteps = () => {
     <FormThanks data={data} />, 
   ];  
 
-  const { currentStep, currentComponent, changeSteps, isLastStep, isFirstStep } = useForm(formComponents);
+  const { 
+    currentStep,  
+    currentComponent,  
+    changeSteps,  
+    isLastStep,  
+    isFirstStep  
+  } = useForm(formComponents); 
+
+  const handleSendMessageWpp = () => {
+    const message = `Nome: ${data.name}\nEmail: ${data.email}\nSatisfação: ${data.review}\nComentário: ${data.comment}`;   
+    const whatsappUrl = `https://api.whatsapp.com/send?phone=+5581998136237&text=${encodeURIComponent(message)}`;  
+    window.open(whatsappUrl, "_blank");  
+
+    setOpenModal(true); 
+  };  
 
   return (
     <div className="form-app">
