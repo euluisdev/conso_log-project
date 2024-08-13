@@ -80,7 +80,7 @@ const FormSteps = () => {
                   <GrFormNext />
                 </button>
               ) : (
-                <button type="button">  
+                <button type="button" onClick={handleSendMessageWpp}>  
                   <span>Enviar</span>     
                   <FiSend />             
                 </button>
