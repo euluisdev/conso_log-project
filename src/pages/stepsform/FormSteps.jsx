@@ -115,36 +115,42 @@ const FormSteps = () => {
           </div>
         </form>
       </div>
+
       <section className="text-tecnic">
         <div className="half-width highlighted-text">
-          <h2>/* Documentação React Utilizada: */</h2>
+          <h2><strong>Sobre Este Projeto</strong><br /><br /></h2>
           <p>
-            &nbsp;&nbsp;&nbsp;Durante o desenvolvimento desta aplicação em REACT, foram consultadas e aplicadas algumas seções da documentação oficial do React. Acesse cada parte da Documentação REACT, através do link em azul, que aparece nesta sessão:
-            <br />&nbsp;&nbsp;&nbsp;##Introdução ao JSX:
-            Utilizado para escrever a interface da calculadora de forma declarativa, permitindo a criação de elementos React utilizando uma sintaxe semelhante ao HTML.
-            <a href="https://reactjs.org/docs/jsx-in-depth.html"> JSX In Depth.  </a>
-            <br />&nbsp;&nbsp;&nbsp;##Componentes e Props:
-            A calculadora é dividida em componentes reutilizáveis, como Button, Display, CalculatorHistory, e Calculator. As props são usadas para passar dados e funções entre esses componentes.
-            <a href="https://reactjs.org/docs/components-and-props.html"> Components and Props.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Estado e Ciclo de Vida:
-            Utilizados para gerenciar o estado interno da calculadora. O estado é mantido em variáveis como num, oldNumber, fourOperation e history, que armazenam o valor atual, o valor antigo, a operação selecionada e o histórico de cálculos, respectivamente.
-            <a href="https://reactjs.org/docs/state-and-lifecycle.html"> State and Lifecycle.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Manipulação de Eventos:
-            Para capturar e tratar eventos de clique nos botões da calculadora, permitindo que a interface reaja às ações do usuário.
-            <a href="https://reactjs.org/docs/handling-events.html"> Handling Events.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Listas e Chaves:
-            São utilizadas para renderizar os botões da calculadora de forma eficiente, garantindo que cada botão tenha uma chave única, otimizando a renderização.
-            <a href="https://reactjs.org/docs/lists-and-keys.html"> Lists and Keys.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Hooks
-            useState é usado para gerenciar o estado local dos componentes funcionais, permitindo o controle dos valores e operações da calculadora de forma eficiente.
-            &nbsp;<a href="https://reactjs.org/docs/hooks-intro.html">Introducing Hooks.  </a>
-            &nbsp;&nbsp;<a href="https://reactjs.org/docs/hooks-state.html">Using the State Hook.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE no meu GITHUB para obter mais informações.
+            Este formulário de avaliação foi desenvolvido com React e destaca várias práticas modernas de desenvolvimento web.<br /><br />
+
+            <strong>Funcionalidades Principais</strong><br /><br />
+
+            - Formulário Multi-Etapas: Dividido em três etapas - dados do usuário, avaliação e agradecimento - com navegação intuitiva.<br />
+            - Envio via WhatsApp: Os dados preenchidos são enviados diretamente para um número de WhatsApp.<br />
+            - Modal de Confirmação: Após o envio, um modal confirma o sucesso da operação e reseta o formulário.<br /><br />
+
+            <strong>Tecnologias Utilizadas</strong><br /><br />
+
+            - <a href="https://reactjs.org/">React</a>: Utilizei componentes reutilizáveis e hooks personalizados para gerenciar o estado e o fluxo das etapas.<br />
+            - <a href="https://mui.com/">Material UI</a>: Para estilização e criação de um modal personalizado, seguindo a documentação oficial.<br />
+            - <a href="https://react-icons.github.io/react-icons/">React Icons</a>: Adicionei ícones para melhorar a experiência de usuário.<br /><br />
+
+            <strong>Detalhes Técnicos</strong><br /><br />
+
+            - Hooks Personalizados: Um hook personalizado (<a href="https://reactjs.org/docs/hooks-custom.html">useForm</a>) foi criado para controlar o fluxo das etapas do formulário.<br />
+            - CSS Customizado: Estilos personalizados foram aplicados além dos componentes do Material UI para garantir um design coeso.<br /><br />
+
+            <strong>Documentação Consultada</strong><br /><br />
+
+            - <a href="https://reactjs.org/docs/getting-started.html">React Documentation</a> - para hooks e componentização.<br />
+            - <a href="https://mui.com/material-ui/getting-started/overview/">Material UI Documentation</a> - para modais e estilos personalizados.<br />
+            - <a href="https://react-icons.github.io/react-icons/">React Icons Documentation</a> - para a integração de ícones.<br /><br />
+
+            Este projeto faz parte do meu portfólio e está disponível no GitHub. Fique à vontade para explorar o código e as demais implementações <a href="https://github.com/euluisdev/conso_log-project">aqui</a>.
           </p>
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default FormSteps;
+export default FormSteps;  

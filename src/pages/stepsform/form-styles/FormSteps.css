@@ -1,6 +1,6 @@
 .form-app {
     color: #FFF;
-    height: 100vw;
+    height: 100%;
     width: 100vw;
     box-sizing: border-box;
     background-color: rgba(37, 37, 37, 0.5);
@@ -86,4 +86,10 @@ h2 {
     align-items: center;
     justify-content: center;
     text-align: center;
+}
+
+.text-tecnic p {
+    text-align: justify;
+    max-width: 100%;
+    margin-left: 15rem;
 }
