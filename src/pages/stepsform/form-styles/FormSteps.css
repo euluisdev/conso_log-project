@@ -1,5 +1,8 @@
 .form-app {
     color: #FFF;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
     height: 100%;
     width: 100vw;
     box-sizing: border-box;
@@ -24,9 +27,12 @@ h2 {
 }
 
 .form-container {
-    max-width: 40%;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 50%;
+    height: 60rem;
     margin: 0 auto;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: rgb(40, 40, 40);
     box-shadow: rgb(0, 0, 255) 0px 5px 59px 9px;
 }
@@ -38,9 +44,7 @@ h2 {
 }
 
 .form-container form {
-    max-width: 90%;
-    margin: 4rem 6rem 6rem 6rem;
-
+    margin: 0 13rem;
 }
 
 .form-inputs {
@@ -48,8 +52,6 @@ h2 {
     min-height: 28rem;
     color: rgb(162, 162, 200);
 }
-
-
             /*         */
 
 .actions {
@@ -81,15 +83,16 @@ h2 {
      
 
 .text-tecnic {
-    width: 100%;
     display: flex;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+    margin-bottom: -10rem;
+    height: 100%;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    background: linear-gradient(to top, #000000, rgba(128, 128, 128, 0.826), #000066);
 }
 
 .text-tecnic p {
-    text-align: justify;
-    max-width: 100%;
-    margin-left: 15rem;
-}
+    text-align: center;
+} 
