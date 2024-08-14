@@ -1,3 +1,8 @@
+# Projeto CONSOL DOT LOG 
+
+
+
+
 # Formulário de Avaliação com React
 
 Este é um projeto de formulário de avaliação construído com React, utilizando componentes reutilizáveis e hooks personalizados para gerenciar etapas do formulário e controlar o estado dos dados inseridos pelos usuários.
@@ -25,7 +30,7 @@ Este é um projeto de formulário de avaliação construído com React, utilizan
 - **Estilos customizados**: Utilizamos a capacidade de customização do Material UI para aplicar estilos personalizados no modal.
 
 ### **CSS**
-- **Estilização Personalizada**: Além do Material UI, foi utilizada estilização personalizada em CSS para garantir que o design do formulário correspondesse à identidade visual desejada.
+- **Estilização Personalizada**: Além do Material UI, foi utilizada estilização personalizada em CSS para garantir que o design do formulário correspondesse à identidade visual do projeto como um todo.
 
 ### **Hooks Personalizados**
 - **useForm**: Um hook personalizado que gerencia as etapas do formulário, verificando se é a primeira ou última etapa, e controlando as transições de etapas.
@@ -33,18 +38,26 @@ Este é um projeto de formulário de avaliação construído com React, utilizan
 ## Estrutura do Projeto
 
 - **form-components/**: Contém os componentes específicos de cada etapa do formulário (FormUser, FormReview, FormThanks).
-- **form-styles/**: Contém os arquivos de estilo customizados para o formulário.
+- **form-styles/**: Contém os arquivos .css de estilo customizados para o formulário.
 - **hooks/**: Contém o hook personalizado `useForm`, utilizado para controlar as etapas do formulário.
 
 ## Fluxo de Trabalho
 
 1. **Primeira Etapa**: O usuário insere seu nome e e-mail.
-2. **Segunda Etapa**: O usuário insere sua avaliação e comentários adicionais.
-3. **Terceira Etapa**: Uma mensagem de agradecimento é exibida, junto com um botão para enviar os dados.
+2. **Segunda Etapa**: O usuário insere sua avaliação utilizando icons e comentários adicionais.
+3. **Terceira Etapa**: Uma mensagem de agradecimento é exibida, junto com  todos os dados coletados do usuário e o botão para enviar os dados via API do WHATSSAPP.
 
 Após o envio:
-- **Modal**: Um modal aparece confirmando o envio, com uma mensagem personalizada.
-- **Redefinição**: Ao fechar o modal, o formulário é redefinido para a primeira etapa, com todos os campos limpos.
+- **Modal**: Um Modal aparece confirmando o envio, com uma mensagem personalizada com nome inserido no input, e um botão para fechar o Modal.
+- **Redefinição**: Ao fechar o Modal, o formulário é redefinido para a primeira etapa, com todos os campos limpos, como podemos verificar no próprio projeto eme seu endereço.
+
+
+
+
+
+
+
+
 
 ## Como Executar o Projeto
 
@@ -52,4 +65,5 @@ Para rodar o projeto localmente:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/seu-repositorio.git
+   git clone 
+  
