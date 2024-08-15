@@ -11,7 +11,7 @@
 
 .thanks-container p { 
     font-size: 1.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .review-data h3{
@@ -30,12 +30,12 @@
     font-size: 2rem;
     color: blue;
     font-weight: bold; 
-
+    text-align: left;
 }
 
 .review-data .emoji-data svg{
-    padding:  1rem 0 0 1rem; 
-    font-size: 4rem;
+    font-size: 3rem;
+    margin-left: 1rem;
     color: #FFF;
 }
 

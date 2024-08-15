@@ -25,9 +25,9 @@ const FormThanks = ({ data }) => {
         <p>
           <span>Satisfação com a aplicação: </span>
           <span className="emoji-data">{emojiData[data.review]}</span>
+          <br/><br/><span>Seu comentário: </span>
         </p>
         <p>
-          <span>Seu comentário: </span>
           {data.comment}
         </p>
       </div>
