@@ -75,14 +75,28 @@ const FormSteps = () => {
       </div>
 
       <Modal open={open} onClose={handleClose}>
-        <Box sx={{ p: 8, backgroundColor: 'white', borderRadius: 2 }}>
+        <Box
+          sx={{
+            p: 8,
+            backgroundColor: 'white',
+            borderRadius: 2,
+            width: '50%',
+            maxWidth: '600px', // Isso limita a largura máxima, ajuste conforme necessário
+            margin: 'auto',
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)', // Centraliza vertical e horizontalmente 
+            boxShadow: 24, // Adiciona uma sombra agradável
+          }}
+        >
           <Typography variant="h2" component="h2">
             Sucesso!
           </Typography>
           <Typography variant="h3" sx={{ mt: 2 }}>
             Olá {data.name}, sua mensagem foi enviada com sucesso! Obrigado.
           </Typography>
-          <Button sx={{ p: 8, fontSize: '2rem', }} onClick={handleClose}>Fechar</Button>
+          <Button sx={{ p: 6, fontSize: '2rem' }} onClick={handleClose}>Fechar</Button>
         </Box>
       </Modal>
 
