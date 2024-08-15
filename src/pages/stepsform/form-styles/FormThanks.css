@@ -21,16 +21,21 @@
 
 .review-data p {
     text-align: left; 
+    max-height: 10rem;
+    overflow: hidden;
+    overflow-y: auto;
 } 
 
 .review-data span {
     font-size: 2rem;
     color: blue;
     font-weight: bold; 
+
 }
 
 .review-data .emoji-data svg{
     padding:  1rem 0 0 1rem; 
     font-size: 4rem;
+    color: #FFF;
 }
 
