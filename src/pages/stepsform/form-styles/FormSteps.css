@@ -7,13 +7,6 @@
     width: 100vw;
     box-sizing: border-box;
     background-color: rgba(37, 37, 37, 0.5);
-    padding: 12rem 0 8rem 0;
-}
-
-h2 {
-    color: blue;
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
 }
 
 .form-header {
@@ -21,9 +14,15 @@ h2 {
     margin-bottom: 4rem;
 }
 
+.form-header h2 {
+    color: blue;
+    font-size: 3rem;
+    padding-top: 15rem;
+}
+
 .form-header p {
-    padding: 4rem;
-    font-size: 1.6rem;
+    padding: 4rem 0;
+    font-size: 1.8rem;
 }
 
 .form-container {
