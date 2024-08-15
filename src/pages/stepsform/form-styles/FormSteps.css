@@ -6,7 +6,7 @@
     height: 100%;
     width: 100vw;
     box-sizing: border-box;
-    background-color: rgba(37, 37, 37, 0.5);
+    background-color: rgba(37, 37, 37, 0.5); 
 }
 
 .form-header {
@@ -29,7 +29,8 @@
     box-sizing: border-box;
     width: 100%;
     max-width: 50%;
-    height: 60rem;
+    height: 100%;
+    min-height: 60rem;
     margin: 0 auto;
     padding: 1rem;
     background-color: rgb(40, 40, 40);
