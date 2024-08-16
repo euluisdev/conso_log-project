@@ -4,7 +4,8 @@ import CalculateIcon from '@mui/icons-material/Calculate';
 import HomeIcon from '@mui/icons-material/Home';
 import ChecklistIcon from '@mui/icons-material/Checklist';
 import VideocamIcon from '@mui/icons-material/Videocam';
-import FormatIndentIncreaseIcon from '@mui/icons-material/FormatIndentIncrease';
+import FormatIndentIncreaseIcon from '@mui/icons-material/FormatIndentIncrease'; 
+import MenuIcon from '@mui/icons-material/Menu'; 
 
 import './cssComponents/NavBar.css';
 
@@ -22,7 +23,11 @@ const NavBar = () => {
                     <li><Link to='/todolist'><ChecklistIcon />Todo List</Link></li>
                     <li><Link to='/movies'><VideocamIcon />Movies</Link></li>
                     <li><Link to='/form'><FormatIndentIncreaseIcon />Form Steps</Link></li>
-                </ul>
+                </ul> 
+
+                <section className='navmenu-icon'>
+                    <MenuIcon />
+                </section>
             </nav>
         </div>
     );
