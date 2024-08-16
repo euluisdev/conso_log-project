@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import { Link } from "react-router-dom"; 
+ 
+import { IoClose } from "react-icons/io5"; 
 
 /* import { ContainerMob } from './stylesComponent';  */
 
@@ -15,6 +17,9 @@ const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => {
           <li><Link to="/form" onClick={() => setMenuIsVisible(fale)}>FormSteps</Link></li>
         </ul> 
       </nav> 
+      <section className="mob-nave">
+        <IoClose />
+      </section>
     </div> 
   );   
 };
