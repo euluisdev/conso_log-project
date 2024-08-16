@@ -13,16 +13,19 @@ function App() {
 
   return (  
     <>
-    <NavBarMobile /> 
+    <NavBarMobile 
+      menuIsVisible={menuIsVisible} 
+      setMenuIsVisible={setMenuIsVisible}
+    /> 
       <div className="app"> 
-        <NavBar /> 
+        <NavBar setMenuIsVisible={setMenuIsVisible} /> 
         <Outlet />  
       </div>
       <footer>
         <Footer /> 
       </footer>
     </>
-  ) 
+  ); 
 }; 
 
 export default App;
