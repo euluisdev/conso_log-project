@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ContainerMob = styled.section`
-  /* display: ${({ $isVisible }) => ($isVisible ? 'flex' : 'none')}; */
+  display: ${({ $isVisible }) => ($isVisible ? 'flex' : 'none')}; 
   color: blue;
 
   font-size: 2rem;
@@ -18,4 +18,14 @@ export const ContainerMob = styled.section`
   justify-content: center;
   position: fixed;
 
-`;
+  background-color: rgba(36, 36, 36, 0.836);
+
+  opacity: 0;
+  transition: opacity 0.2s;
+
+  ${({ $isVisible }) => $isVisible && css`
+    opacity: 1;
+    color: blue;
+  `} 
+`;  
+ 
