@@ -6,13 +6,18 @@ import { Link } from "react-router-dom";
 const NavBarMobile = () => {
   return (
     <div className="mob-container"> 
-      <nav id="mob-nav">
-        <ul className="mob-logo">
+      <nav id="mob-nav"> 
+        <ul>
           <li><Link to="/"></Link></li> 
-        </ul>
-      </nav>
-    </div>
-  );  
+          <li><Link to="/calculator"></Link></li> 
+          <li><Link to="/todo"></Link></li> 
+          <li><Link to="/movie"></Link></li>
+          <li><Link to="/form"></Link></li>
+        </ul> 
+      </nav> 
+    </div> 
+  );   
 };
 
 export default NavBarMobile;
+ 
