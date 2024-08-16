@@ -4,9 +4,10 @@ import { IoClose } from "react-icons/io5";
 
 /* import { ContainerMob } from './stylesComponent';  */
 
+import './NavBarMobile.css'; 
 
 const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => { 
-    
+
   return (
     <div className="mob-container"> 
       <nav id="mob-nav"> 
