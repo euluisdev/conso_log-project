@@ -5,11 +5,11 @@ import { ContainerMob } from './stylesComponent';
 
 const NavBarMobile = () => {
   return (
-    <ContainerMob className="nav-content">
-      <nav className="mob-navbar">
-        <span className="mob-logo">
-          <Link to="/"></Link>
-        </span>
+    <ContainerMob className="mob-container"> 
+      <nav id="mob-nav">
+        <ul className="mob-logo">
+          <li><Link to="/"></Link></li> 
+        </ul>
       </nav>
     </ContainerMob>
   );  
