@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom"; 
  
 import { IoClose } from "react-icons/io5"; 
-import { ContainerMob } from './stylesComponent'; 
+import { ContainerMob } from "./StyledComponents"; 
 
 import './NavBarMobile.css'; 
 
 const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => { 
 
   return (
-    <div className="mob-container"> 
+    <ContainerMob className="mob-container"> 
       <nav id="mob-nav"> 
         <ul>
           <li><Link to="/" onClick={() => setMenuIsVisible(false)}>CONSOLOG</Link></li> 
@@ -21,7 +21,7 @@ const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => {
       <section className="mob-nave">
         <IoClose size={ 50 } onClick={() => setMenuIsVisible(false)} /> 
       </section>
-    </div> 
+    </ContainerMob> 
   );   
 };
 
