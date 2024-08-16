@@ -5,7 +5,8 @@ import { IoClose } from "react-icons/io5";
 /* import { ContainerMob } from './stylesComponent';  */
 
 
-const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => {
+const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => { 
+    
   return (
     <div className="mob-container"> 
       <nav id="mob-nav"> 
@@ -18,7 +19,7 @@ const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => {
         </ul> 
       </nav> 
       <section className="mob-nave">
-        <IoClose />
+        <IoClose size={ 50 } onClick={() => setMenuIsVisible(false)} /> 
       </section>
     </div> 
   );   
