@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const ContainerMob = styled.section`
   display: ${({ $isVisible }) => ($isVisible ? 'flex' : 'none')}; 
