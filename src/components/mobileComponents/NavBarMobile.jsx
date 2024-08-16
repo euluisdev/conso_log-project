@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-import { ContainerMob } from './stylesComponent';
+import { ContainerMob } from './stylesComponent'; 
 
 
 const NavBarMobile = () => {
