@@ -9,13 +9,13 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import './cssComponents/NavBar.css';
 
-const NavBar = () => {
+const NavBar = ({ setMenuIsVisible }) => {
     return (
-        <div className='nav-contente'>
+        <div className='nav-content'>
             <nav id='navbar'>
                 <span className='logo'>
                     <Link to='/'>
-                        <HomeIcon className="home-icon" />CONSO.LOG <p>{'<project />'}</p>
+                        <HomeIcon className="home-icon" /> CONSO.LOG <p>{'<project />'}</p>
                     </Link>
                 </span>
                 <ul className="nav-list">
@@ -26,7 +26,7 @@ const NavBar = () => {
                 </ul> 
 
                 <section className='navmenu-icon'>
-                    <MenuIcon />
+                    <MenuIcon onClick={() => setMenuIsVisible(true)} />
                 </section>
             </nav>
         </div>
