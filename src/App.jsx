@@ -8,24 +8,24 @@ import NavBarMobile from './components/mobileComponents/NavBarMobile';
 
 import './App.css'
 
-function App() { 
-  const [menuIsVisible, setMenuIsVisible] = useState(false); 
+function App() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false);
 
-  return (  
+  return (
     <>
-    <NavBarMobile 
-      menuIsVisible={menuIsVisible} 
-      setMenuIsVisible={setMenuIsVisible}
-    /> 
-      <div className="app"> 
-        <NavBar setMenuIsVisible={setMenuIsVisible} /> 
-        <Outlet />  
+      <NavBarMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+      <div className="app">
+        <NavBar setMenuIsVisible={setMenuIsVisible} />
+        <Outlet />
       </div>
       <footer>
-        <Footer /> 
+        <Footer />
       </footer>
     </>
-  ); 
-}; 
+  );
+};
 
 export default App;
