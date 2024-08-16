@@ -99,3 +99,18 @@ a {
     height: 2rem;
 }     
 
+/* icon MENU MOBILE open */
+
+.navmenu-icon svg {
+    display: flex;
+    color: #FFF;
+    width: 4rem;
+    height: 4rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.navmenu-icon svg:hover {
+    color: blue;
+}
