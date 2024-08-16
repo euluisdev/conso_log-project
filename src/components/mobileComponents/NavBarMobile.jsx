@@ -1,18 +1,18 @@
 import { Link } from "react-router-dom";
 
+import { ContainerMob } from './stylesComponent';
+
 
 const NavBarMobile = () => {
   return (
-    <div className="nav-content">
+    <ContainerMob className="nav-content">
       <nav className="mob-navbar">
         <span className="mob-logo">
-          <Link to="/"> 
-
-          </Link>
+          <Link to="/"></Link>
         </span>
       </nav>
-    </div>
-  );
+    </ContainerMob>
+  );  
 };
 
 export default NavBarMobile;
