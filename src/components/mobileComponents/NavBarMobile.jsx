@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom"; 
  
 import { IoClose } from "react-icons/io5"; 
-
-/* import { ContainerMob } from './stylesComponent';  */
+import { ContainerMob } from './stylesComponent'; 
 
 import './NavBarMobile.css'; 
 
