@@ -14,7 +14,7 @@ a {
     display: flex; 
     font-family: "Lato", sans-serif;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     background-color: #000000ea;
     position: fixed;
