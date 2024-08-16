@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 import { Outlet } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
@@ -7,6 +9,8 @@ import NavBarMobile from './components/mobileComponents/NavBarMobile';
 import './App.css'
 
 function App() { 
+  const [menuIsVisible, setMenuIsVisible] = useState(false); 
+
   return (  
     <>
     <NavBarMobile /> 
