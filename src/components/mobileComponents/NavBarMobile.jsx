@@ -8,14 +8,14 @@ import './NavBarMobile.css';
 const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => { 
 
   return (
-    <ContainerMob $isVisisble={menuIsVisible} className="mob-container"> 
+    <ContainerMob $isVisible={menuIsVisible} className="mob-container"> 
       <nav id="mob-nav"> 
         <ul>
           <li><Link to="/" onClick={() => setMenuIsVisible(false)}>CONSO.LOG</Link></li> 
           <li><Link to="/calculator" onClick={() => setMenuIsVisible(false)}>Calculator</Link></li> 
           <li><Link to="/todo" onClick={() => setMenuIsVisible(false)}>TodoList</Link></li> 
           <li><Link to="/movies" onClick={() => setMenuIsVisible(false)}>Movie</Link></li>
-          <li><Link to="/form" onClick={() => setMenuIsVisible(fale)}>FormSteps</Link></li>
+          <li><Link to="/form" onClick={() => setMenuIsVisible(false)}>FormSteps</Link></li>
         </ul> 
       </nav> 
       <section className="mob-nave">
