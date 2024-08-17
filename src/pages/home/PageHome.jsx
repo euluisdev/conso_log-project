@@ -20,7 +20,7 @@ function PageHome() {
         <h1><HomeTitle title={title} /></h1>
       </div>
       <div>
-        <p><HomeSlider /></p>
+        <HomeSlider />
       </div>
       <div className="txt-end">
         <p>
