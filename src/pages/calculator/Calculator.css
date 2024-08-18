@@ -115,6 +115,9 @@
 
 .history-calc {
     margin: -25rem 25rem 0 15rem;
+    resize: none;
+    overflow: auto;
+    max-height: 40rem;
 }
 
 

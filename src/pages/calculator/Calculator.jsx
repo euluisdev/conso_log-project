@@ -146,7 +146,7 @@ const Calculator = () => {
             </div>
           </Container >
           <section className='history-calc'>
-            <CalculatorHistory />
+            <CalculatorHistory history={history} />
           </section>
         </div>
 
