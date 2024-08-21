@@ -28,7 +28,7 @@ function PageHome() {
         </p>
       </div>
     </section>
-  )
-}
+  ); 
+}; 
 
-export default PageHome;
+export default PageHome;  
