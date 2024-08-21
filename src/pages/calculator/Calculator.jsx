@@ -118,7 +118,6 @@ const Calculator = () => {
       </div>
       <section className='flex-cont-ainer'>
         <div className="calculator">
-          <Box m={9} />
           <Container maxWidth="xs">
             <div className="wrapper">
               <h3>Calculator</h3>
@@ -151,9 +150,9 @@ const Calculator = () => {
         </div>
 
         <div className="half-width highlighted-text">
-          <h2>/* Documentação React Utilizada: */</h2>
+          <h2> Documentação Utilizada: </h2>
           <p>
-            &nbsp;&nbsp;&nbsp;Durante o desenvolvimento desta aplicação em REACT, foram consultadas e aplicadas algumas seções da documentação oficial do React. Acesse cada parte da Documentação REACT, através do link em azul, que aparece nesta sessão:
+            &nbsp;&nbsp;&nbsp;Durante o desenvolvimento desta aplicação, foram consultadas e aplicadas algumas seções da documentação oficial do React. Acesse cada parte da Documentação REACT, através do link, que aparece nesta sessão:
             <br />&nbsp;&nbsp;&nbsp;##Introdução ao JSX:
             Utilizado para escrever a interface da calculadora de forma declarativa, permitindo a criação de elementos React utilizando uma sintaxe semelhante ao HTML.
             <a href="https://reactjs.org/docs/jsx-in-depth.html"> JSX In Depth.  </a>
