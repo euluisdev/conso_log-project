@@ -109,17 +109,8 @@ Este é um projeto de formulário de avaliação construído com React, utilizan
   - Documentação oficial: [Material UI Modal](https://mui.com/material-ui/react-modal/)
 - **Estilos customizados**: Utilizamos a capacidade de customização do Material UI para aplicar estilos personalizados no modal.
 
-### **CSS**
-- **Estilização Personalizada**: Além do Material UI, foi utilizada estilização personalizada em CSS para garantir que o design do formulário correspondesse à identidade visual do projeto como um todo.
-
 ### **Hooks Personalizados**
 - **useForm**: Um hook personalizado que gerencia as etapas do formulário, verificando se é a primeira ou última etapa, e controlando as transições de etapas.
-
-## Estrutura do Projeto
-
-- **form-components/**: Contém os componentes específicos de cada etapa do formulário (FormUser, FormReview, FormThanks).
-- **form-styles/**: Contém os arquivos .css de estilo customizados para o formulário.
-- **hooks/**: Contém o hook personalizado `useForm`, utilizado para controlar as etapas do formulário.
 
 ## Fluxo de Trabalho
 
