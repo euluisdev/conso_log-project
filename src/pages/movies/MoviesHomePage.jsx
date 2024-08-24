@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import MoviesNavbar from "./moviesComponents/MoviesNavbar";
+import MoviesNavbar from "./moviesComponents/MoviesNavbar.jsx";
 
 import './style/MoviesImport.css';
 
