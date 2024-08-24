@@ -6,7 +6,7 @@
     background-color: #00000083;
 }
 
-.double-text {
+.double-text { 
     display: flex;
     flex-wrap: wrap;
     padding: 3rem 0rem 0rem 0rem;
@@ -21,16 +21,17 @@
     z-index: -1;
 }
 
-.double-text p {
-    padding-top: 0.5rem;
-}
-
 .movies-txts {
     flex: 1;
 }
 
 .movies-txts2 {
     flex: 1;
+}
+
+.movies-txts,
+.movies-txts2 {
+    padding: 7rem 1rem 1rem 1rem;
 }
 
 .movies-txts,
@@ -46,8 +47,7 @@
     color: rgb(0, 60, 255);
 }
 
-.movies-app,
-.movies-txts p {
+.movies-app, .movies-txts p { 
     font-family: "Lato", sans-serif;
     font-size: 1.9rem;
     line-height: 1.6;
