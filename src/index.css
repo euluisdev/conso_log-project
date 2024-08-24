@@ -25,7 +25,7 @@ body::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-image: url(src/pages/home/bg-home/bg-hm5.jpg); /* Sua imagem de fundo */
+    background-image: url("./pages/home/bg-home/bg-hm5.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
