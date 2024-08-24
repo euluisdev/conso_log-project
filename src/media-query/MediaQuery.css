@@ -1,0 +1,12 @@
+
+/* breack point 1434px */
+@media (max-width: 1434px) {
+    #navbar{
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo {
+        margin-left: 0rem;
+    }
+}
