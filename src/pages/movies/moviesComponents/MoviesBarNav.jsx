@@ -10,7 +10,7 @@ const MoviesBarNav = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        
+
         if (!search) return;
 
         navigate(`search?q=${search}`);
@@ -21,7 +21,7 @@ const MoviesBarNav = () => {
         <nav id="movies-navbar">
             <h2>
                 <Link to=''>
-                    <BiCameraMovie /> CONSO.LOG Movies
+                    <BiCameraMovie /> Best Movies
                 </Link>
             </h2>
             <form onSubmit={handleSubmit}>
