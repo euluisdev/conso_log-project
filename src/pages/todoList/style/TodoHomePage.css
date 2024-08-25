@@ -10,7 +10,7 @@
     justify-content: center;
     gap: 15rem;
     width: 100%;
-    background-image: url(src/pages/todoList/todo-img/to-do-bg.jpg);
+    background-image: url("src/pages/todoList/todo-img/to-do-bg.jpg");
     background-size: cover;
     background-position: center;
     min-height: 100vh;
