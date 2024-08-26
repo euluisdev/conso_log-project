@@ -73,3 +73,25 @@
         padding: 10rem;
     }
 }
+
+/* breack point 750px */
+@media (max-width: 750px) {
+    .nav-content {
+        justify-content: center;
+    }
+
+    #navbar .nav-list li {
+        display: none;
+    }
+
+    .navmenu-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navmenu-icon svg {
+        display: flex;
+    }
+}
