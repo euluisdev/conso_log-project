@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import NavBarMobile from './components/mobileComponents/NavBarMobile';
 
 import './App.css'
+import './media-query/MediaQuery.css';
 
 function App() {
   const [menuIsVisible, setMenuIsVisible] = useState(false);
