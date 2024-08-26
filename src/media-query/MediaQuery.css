@@ -74,6 +74,7 @@
     }
 }
 
+
 /* breack point 750px */
 @media (max-width: 750px) {
     .nav-content {
@@ -93,5 +94,28 @@
 
     .navmenu-icon svg {
         display: flex;
+    }
+
+
+    .logo {
+        font-size: 2.1rem;
+    }
+
+    .homePage-cont .initial-text h1 {
+        font-size: 2.1rem; 
+        padding: 10rem 0 1rem 0;
+    }
+
+    .slider-container .slide-item {
+        max-width: 80%;
+        height: 50vw;
+    }
+
+    .slider-container .slide-txt {
+        font-size: 1.7rem;
+    }
+
+    .homePage-cont .txt-end p {
+        padding: 7rem;
     }
 }
