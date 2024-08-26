@@ -16,6 +16,8 @@ import MoviesSearch from './pages/movies/moviesPages/MoviesSearch.jsx';
 
 import './index.css';
 
+import './media-query/MediaQuery.css';
+
 
 ReactDOM.createRoot(document.querySelector('#root')).render(  
   <React.StrictMode>

@@ -1,7 +1,7 @@
 
 /* breack point 1518px */
 @media (max-width: 1518px) {
-    #navbar{
+    #navbar {
         display: flex;
         justify-content: center;
     }
@@ -10,3 +10,45 @@
         margin-left: 0rem;
     }
 }
+
+
+/* breack point 1300px */
+@media (max-width: 1300px) {
+    .slider-container
+    .slide-item {
+        max-width: 50%;
+        height: 30vw;
+    }
+}
+
+
+/* breack point 1020px */
+/* @media (max-width: 1020px) {
+    #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+/*     #navbar .nav-list li {
+        margin-left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 1rem 0.2rem;
+    }
+
+    .nav-list {
+        width: 90%;
+    }
+
+    .nav-list li {
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+    }
+
+    .homePage-cont .initial-text {
+        padding: 19rem 0 4rem 0;
+    } 
+}*/
