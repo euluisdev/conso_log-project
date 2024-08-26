@@ -29,12 +29,10 @@ const HomeTitle = ({ title }) => {
     }, [title]);
 
     return (
-        <div>
-            <h1 className="home-title">
+            <h1 className="initial-text">
                 {displayedTitle}
                 {showCursor && <span>|</span>}
             </h1>
-        </div>
     )
 }
 

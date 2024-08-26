@@ -17,7 +17,7 @@ function PageHome() {
   return (
     <section className='homePage-cont'>
       <div className='initial-text'>
-        <h1><HomeTitle title={title} /></h1>
+        <HomeTitle title={title} />
       </div>
       <div>
         <HomeSlider />

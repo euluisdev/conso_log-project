@@ -50,7 +50,7 @@
     }
 
 
-    .homePage-cont .initial-text h1 {
+    .homePage-cont .initial-text {
         font-size: 2.5rem; 
         padding: 10rem 0 2rem 0;
     }
@@ -101,7 +101,7 @@
         font-size: 2.1rem;
     }
 
-    .homePage-cont .initial-text h1 {
+    .homePage-cont .initial-text {
         font-size: 2.1rem; 
         padding: 10rem 0 1rem 0;
     }
@@ -117,5 +117,14 @@
 
     .homePage-cont .txt-end p {
         padding: 7rem;
+    }
+}
+
+
+/* breack point 645px */
+@media (max-width: 645px) {
+    .homePage-cont .initial-text {
+        font-size: 2rem; 
+        padding: 10rem 1rem 2rem 1rem;
     }
 }

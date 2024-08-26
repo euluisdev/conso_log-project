@@ -7,19 +7,14 @@
     align-items: center;
 }
 
-.initial-text h1 {
+.initial-text {
     color: rgb(245, 245, 247);
-    display: flex;
-    text-align: center;
-    flex-direction: row;
     font-family: "Fira Code", monospace;
-    font-weight: 400;
+    font-weight: 100;
     letter-spacing: 0.5rem;
-    font-style: normal;
     font-size: 3rem;
     padding: 10rem 0 3rem 0;
     align-items: center;
-    justify-content: center;
 }
 
 .txt-end p {
