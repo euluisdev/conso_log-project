@@ -1,6 +1,6 @@
 # Projeto CONSO dot LOG ... in progress... Aplicação Multi-Funcional com React Router;
 
-# Link : https://consodotlog.vercel.app 
+# Link : https://consodotlog.vercel.app    ...criando responsividade...
 
 ## Índice
 
