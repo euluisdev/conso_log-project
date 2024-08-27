@@ -13,7 +13,7 @@ const NavBarMobile = ({ menuIsVisible, setMenuIsVisible }) => {
         <ul>
           <li><Link to="/" onClick={() => setMenuIsVisible(false)}>CONSO.LOG</Link></li> 
           <li><Link to="/calculator" onClick={() => setMenuIsVisible(false)}>Calculator</Link></li> 
-          <li><Link to="/todo" onClick={() => setMenuIsVisible(false)}>TodoList</Link></li> 
+          <li><Link to="/todolist" onClick={() => setMenuIsVisible(false)}>TodoList</Link></li> 
           <li><Link to="/movies" onClick={() => setMenuIsVisible(false)}>Movie</Link></li>
           <li><Link to="/form" onClick={() => setMenuIsVisible(false)}>FormSteps</Link></li>
         </ul> 
