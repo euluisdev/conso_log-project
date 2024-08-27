@@ -19,7 +19,7 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
   const [editedText, setEditedText] = useState(item.text); 
 
   useEffect(() => {
-    const targetDiv = document.querySelector('.MuiModal-backdrop');
+    const targetDiv = document.querySelector('.MuiDialog-root');
   
     if (targetDiv) {
       targetDiv.removeAttribute('aria-hidden');
@@ -55,7 +55,7 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
         </DialogContent>
         <DialogActions>
           <Button onClick={dialogHandler}>Cancelar</Button>
-          <Button onClick={textHandler}>Confirmar</Button>
+          <Button onClick={textHandler} autoFocus >Confirmar</Button>
         </DialogActions>
       </Dialog>
   );
