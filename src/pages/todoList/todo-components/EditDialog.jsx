@@ -18,10 +18,13 @@ const Transition = forwardRef(function Transition(props, ref) {
 const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
   const [editedText, setEditedText] = useState(item.text); 
 
-/*   useEffect(() => {
-    const hiddenElements = document.querySelectorAll('[aria-hidden="true"]');
-    console.log('Hidden elements:', hiddenElements);
-  }, [openDialog]); */
+  useEffect(() => {
+    const targetDiv = document.querySelector('.MuiModal-backdrop');
+  
+    if (targetDiv) {
+      targetDiv.removeAttribute('aria-hidden');
+    }
+  }, []);
 
   const textHandler = () => {
     editTask(item.id, editedText);
