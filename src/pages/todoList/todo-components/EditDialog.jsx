@@ -26,11 +26,12 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
       <Dialog
         open={openDialog}
         onClose={dialogHandler}
-        TransitionComponent={Transition}
+        /* TransitionComponent={Transition} */
         keepMounted
         aria-describedby="alert-dialog-slide-description" 
         fullWidth 
         disableScrollLock
+        disableEnforceFocus
       >
         <DialogTitle className='dialogTxt'>{`Edite sua tarefa:`}</DialogTitle>
         <DialogContent className='dialogContainer'>
