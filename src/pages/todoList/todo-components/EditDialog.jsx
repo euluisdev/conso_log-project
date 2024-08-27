@@ -26,19 +26,18 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
       <Dialog
         open={openDialog}
         onClose={dialogHandler}
-        /* TransitionComponent={Transition} */
+        TransitionComponent={Transition}
         keepMounted
         aria-describedby="alert-dialog-slide-description" 
         fullWidth 
         disableScrollLock
-        disableEnforceFocus
       >
         <DialogTitle className='dialogTxt'>{`Edite sua tarefa:`}</DialogTitle>
         <DialogContent className='dialogContainer'>
             <TextField 
               fullWidth 
-              defaultValue={editedText} 
-              onChange={(e) => setEditedText(e.target.value.trim())} 
+              value={editedText} 
+              onChange={(e) => setEditedText(e.target.value)} 
               InputProps={{ //another way to apply style with material-ui
                 style: { fontSize: 17, color: 'blue' } 
               }}
