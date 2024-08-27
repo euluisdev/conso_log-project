@@ -28,7 +28,7 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
         onClose={dialogHandler}
         TransitionComponent={Transition}
         keepMounted
-        aria-describedby="alert-dialog-slide-description" 
+        /* aria-describedby="alert-dialog-slide-description"  */
         fullWidth 
         disableScrollLock
       >
