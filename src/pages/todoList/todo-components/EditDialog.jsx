@@ -27,13 +27,13 @@ const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
         open={openDialog}
         onClose={dialogHandler}
         TransitionComponent={Transition}
-        keepMounted
-        /* aria-describedby="alert-dialog-slide-description"  */
+        aria-labelledby="dialog-title"   
+        aria-describedby="dialog-description" 
         fullWidth 
         disableScrollLock
       >
-        <DialogTitle className='dialogTxt'>{`Edite sua tarefa:`}</DialogTitle>
-        <DialogContent className='dialogContainer'>
+        <DialogTitle id="dialog-title" className='dialogTxt'>{`Edite sua tarefa:`}</DialogTitle>
+        <DialogContent id="dialog-description" className='dialogContainer'>
             <TextField 
               fullWidth 
               value={editedText} 
