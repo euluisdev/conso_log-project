@@ -1,5 +1,7 @@
 import { useState, forwardRef } from 'react';
 
+import { useEffect } from 'react';
+
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
@@ -15,6 +17,11 @@ const Transition = forwardRef(function Transition(props, ref) {
 
 const EditDialog = ({ editTask, openDialog, dialogHandler, item }) => {
   const [editedText, setEditedText] = useState(item.text); 
+
+/*   useEffect(() => {
+    const hiddenElements = document.querySelectorAll('[aria-hidden="true"]');
+    console.log('Hidden elements:', hiddenElements);
+  }, [openDialog]); */
 
   const textHandler = () => {
     editTask(item.id, editedText);
