@@ -141,4 +141,13 @@
         padding: 5rem 3rem 5rem 3rem;
         font-size: 1.6rem;
     }
+}  
+
+
+/* breack point 500px */
+@media (max-width: 500px) {
+    .homePage-cont .initial-text {
+        font-size: 2rem; 
+        padding: 9rem 1em 2rem 1rem;
+    }
 }
