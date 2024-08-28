@@ -11,6 +11,13 @@ export default defineConfig({
   }, 
   server: {
     open: false, 
-    port: 3000
-  }
+    port: 3000, 
+  }, 
+  resolve: {
+    alias: {
+      '@components': '/src/components',
+      '@pages': '/src/pages',
+      '@assets': '/src/assets',
+    }, 
+  }, 
 });
