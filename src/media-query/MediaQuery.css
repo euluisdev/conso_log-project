@@ -146,8 +146,46 @@
 
 /* breack point 500px */
 @media (max-width: 500px) {
+    #navbar {
+        max-height: 10rem;
+    }
+
+    .logo {
+        font-size: 1.8rem;
+    }
+
+    .logo p {
+        font-size: 1.1rem;
+    }
+
+    .logo svg {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-right: 0rem;
+    }
+
     .homePage-cont .initial-text {
         font-size: 2rem; 
-        padding: 9rem 1em 2rem 1rem;
+        padding: 7rem 1em 1rem 1rem;
+    } 
+
+    .slider-container .slide-txt {
+        font-size: 1.3rem;
+        padding-bottom: 4rem;
     }
-}
+
+    .homePage-cont .txt-end p {
+        padding: 4rem 2rem 5rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .footer-container .footer-icons ul li svg {
+        width: 2.5rem;
+        height: 2.5rem; 
+    } 
+
+    .developed p {
+        font-size: 1.3rem;
+    }
+}  
+ 
