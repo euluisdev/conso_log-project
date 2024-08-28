@@ -166,7 +166,7 @@
 
     .homePage-cont .initial-text {
         font-size: 2rem;
-        padding: 7rem 1em 1rem 1rem;
+        padding: 7rem 1rem 1rem 1rem;
     }
 
     .slider-container .slide-txt {
@@ -194,10 +194,20 @@
 @media (max-width: 434px) {
     .homePage-cont .initial-text {
         font-size: 1.8rem;
-        padding: 7rem 1em 1rem 1rem;
+        padding: 7rem 1rem 1rem 1rem;
     }
 
     .developed p {
         font-size: 1rem;
     }
 }
+
+/* breack point 404px */
+@media (max-width: 404px) {
+    .homePage-cont .initial-text {
+        font-size: 1.6rem;
+        padding: 7rem 0.5em 1rem 0.5rem;
+    }
+}  
+
+
