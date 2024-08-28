@@ -210,4 +210,10 @@
     }
 }  
 
-
+/* breack point 347px */
+@media (max-width: 347px) {
+    .homePage-cont .initial-text {
+        font-size: 1.8rem;
+        padding: 7rem 1em 1rem 1rem;
+    }
+}  
