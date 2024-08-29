@@ -181,7 +181,7 @@
 /*  */
 
 
-.highlighted-text {
+.half-width {
     width: 100%;
     font-size: 2.6rem;
     font-weight: bold;
@@ -200,9 +200,8 @@
     transition: transform 0.3s ease;
 }
 
-.highlighted-text:hover {
+.half-width:hover {
     transform: translateY(-10px);
-    /* edge movement effect */
 }
 
 .half-width h2 {

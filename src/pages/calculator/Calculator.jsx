@@ -150,7 +150,7 @@ const Calculator = () => {
           </section>
         </div>
 
-        <div className="half-width highlighted-text">
+        <div className="half-width">
           <h2> Documentação Utilizada: </h2>
           <p>
             &nbsp;&nbsp;&nbsp;Durante o desenvolvimento desta aplicação, foram consultadas e aplicadas algumas seções da documentação oficial do React. Acesse cada parte da Documentação REACT, através do link, que aparece nesta sessão:
