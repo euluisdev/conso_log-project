@@ -28,3 +28,30 @@
         font-size: 1.6rem;
     }
 } 
+
+/* breack point 750px */
+@media (max-width: 750px) {
+    .full-width h2 {
+        font-size: 2.3rem;
+        padding-bottom: 3rem;
+    }
+
+    .full-width p {
+        padding: 0rem 2rem 1rem 2rem;
+        font-size: 1.6rem;
+    }
+
+    .used-doc {
+        padding: 3rem 0rem 0rem 0rem;
+        margin: 0.5rem 3rem 1rem 3rem;
+    }
+
+    .used-doc h2 {
+        font-size: 2.2rem;
+        padding: 1rem;
+    }
+    .used-doc p {
+        padding: 1rem;
+        font-size: 1.6rem;
+    }
+}
