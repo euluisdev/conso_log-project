@@ -4,7 +4,8 @@ import { Outlet } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import NavBarMobile from './components/mobileComponents/NavBarMobile';
+import NavBarMobile from './components/mobileComponents/NavBarMobile'; 
+import { Analytics } from '@vercel/analytics/react'; 
 
 import './App.css'
 import './media-query/MediaQuery.css';
@@ -23,7 +24,8 @@ function App() {
         <Outlet />
       </div>
       <footer>
-        <Footer />
+        <Footer /> 
+        <Analytics /> 
       </footer>
     </>
   );
