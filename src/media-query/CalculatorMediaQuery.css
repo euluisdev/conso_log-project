@@ -3,4 +3,9 @@
     .full-width p {
         padding: 1rem 10rem 5rem 10rem;
     }
+
+    .used-doc {
+        padding: 5rem 1rem 0rem 1rem;
+        margin: 5rem 5rem 1rem 5rem;
+    }
 }

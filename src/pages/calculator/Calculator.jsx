@@ -153,27 +153,27 @@ const Calculator = () => {
         <div className="used-doc">
           <h2> Documentação Utilizada: </h2>
           <p>
-            &nbsp;&nbsp;&nbsp;Durante o desenvolvimento desta aplicação, foram consultadas e aplicadas algumas seções da documentação oficial do React. Acesse cada parte da Documentação REACT, através do link, que aparece nesta sessão:
-            <br />&nbsp;&nbsp;&nbsp;##Introdução ao JSX:
+            - Durante o desenvolvimento desta aplicação, foram consultadas e aplicadas algumas seções da documentação oficial do React. Acesse cada parte da Documentação REACT, através do link, que aparece nesta sessão:
+            <br />##Introdução ao JSX:
             Utilizado para escrever a interface da calculadora de forma declarativa, permitindo a criação de elementos React utilizando uma sintaxe semelhante ao HTML.
             <a href="https://reactjs.org/docs/jsx-in-depth.html"> JSX In Depth.  </a>
-            <br />&nbsp;&nbsp;&nbsp;##Componentes e Props:
+            <br />##Componentes e Props:
             A calculadora é dividida em componentes reutilizáveis, como Button, Display, CalculatorHistory, e Calculator. As props são usadas para passar dados e funções entre esses componentes.
             <a href="https://reactjs.org/docs/components-and-props.html"> Components and Props.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Estado e Ciclo de Vida:
+            <br></br>##Estado e Ciclo de Vida:
             Utilizados para gerenciar o estado interno da calculadora. O estado é mantido em variáveis como num, oldNumber, fourOperation e history, que armazenam o valor atual, o valor antigo, a operação selecionada e o histórico de cálculos, respectivamente.
             <a href="https://reactjs.org/docs/state-and-lifecycle.html"> State and Lifecycle.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Manipulação de Eventos:
+            <br></br>##Manipulação de Eventos:
             Para capturar e tratar eventos de clique nos botões da calculadora, permitindo que a interface reaja às ações do usuário.
             <a href="https://reactjs.org/docs/handling-events.html"> Handling Events.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Listas e Chaves:
+            <br></br>##Listas e Chaves:
             São utilizadas para renderizar os botões da calculadora de forma eficiente, garantindo que cada botão tenha uma chave única, otimizando a renderização.
             <a href="https://reactjs.org/docs/lists-and-keys.html"> Lists and Keys.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Hooks
+            <br></br>##Hooks
             useState é usado para gerenciar o estado local dos componentes funcionais, permitindo o controle dos valores e operações da calculadora de forma eficiente.
-            &nbsp;<a href="https://reactjs.org/docs/hooks-intro.html">Introducing Hooks.  </a>
-            &nbsp;&nbsp;<a href="https://reactjs.org/docs/hooks-state.html">Using the State Hook.  </a>
-            <br></br>&nbsp;&nbsp;&nbsp;##Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE no meu GITHUB para obter mais informações.
+            <a href="https://reactjs.org/docs/hooks-intro.html">Introducing Hooks.  </a>
+            <a href="https://reactjs.org/docs/hooks-state.html">Using the State Hook.  </a>
+            <br></br>##Este projeto está licenciado sob a licença MIT. Consulte o arquivo LICENSE no meu GITHUB para obter mais informações.
           </p>
         </div>
 
