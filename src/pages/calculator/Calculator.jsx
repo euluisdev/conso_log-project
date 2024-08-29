@@ -3,6 +3,7 @@ import { useState } from "react";
 
 import './Calculator.css';
 
+import '../../media-query/CalculatorMediaQuery.css'
 
 const Calculator = () => {
   const [num, setNum] = useState(0);
