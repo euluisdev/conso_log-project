@@ -34,6 +34,75 @@
     color: white;
 }
 
+
+/* tips */
+.examples-tricks {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 5rem 5rem 5rem;
+}
+
+.usage-examples,
+.tips-and-tricks {
+    background-color: #1f1e1ff8;
+    padding: 2rem;
+    margin: 2rem 0;
+    border-radius: 8px;
+    color: #FFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.3),
+        0 10px 20px rgba(0, 0, 255, 0.2),
+        0 30px 60px rgba(0, 0, 255, 0.1);
+}
+
+.usage-examples h2,
+.tips-and-tricks h2,
+.calculator-history h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: rgb(0, 60, 255);
+    padding-bottom: 1rem;
+}
+
+.usage-examples ul,
+.tips-and-tricks ul,
+.calculator-history ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.usage-examples li,
+.tips-and-tricks li,
+.calculator-history li {
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+}
+
+.usage-examples li::before,
+.tips-and-tricks li::before,
+.calculator-history li::before {
+    content: '➤';
+    color: rgb(0, 60, 255);
+    margin-right: 0.5rem;
+}
+
+.calculator-history {
+    max-height: 40rem;
+    max-width: 35rem;
+    resize: none;
+    overflow: auto;
+    background-color: #1f1e1ff8;
+    padding: 2rem;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+
+/* calculator */
 .flex-cont-ainer {
     display: flex;
     flex-wrap: wrap;
@@ -108,79 +177,7 @@
 }
 
 
-
-/**/
-
-.examples-tricks {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    text-align: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 5rem 5rem 5rem;
-}
-
-.calculator-history {
-    max-height: 40rem;
-    max-width: 35rem;
-    resize: none;
-    overflow: auto;
-    background-color: #1f1e1ff8;
-    padding: 2rem;
-    color: #FFF;
-    border-radius: 5px;
-}
-
-.usage-examples,
-.tips-and-tricks {
-    background-color: #1f1e1ff8;
-    padding: 2rem;
-    margin: 2rem 0;
-    border-radius: 8px;
-    color: #FFF;
-    box-shadow: 0 4px 6px rgba(0, 0, 255, 0.3),
-        0 10px 20px rgba(0, 0, 255, 0.2),
-        0 30px 60px rgba(0, 0, 255, 0.1);
-    /* Sombra 3D */
-}
-
-.usage-examples h2,
-.tips-and-tricks h2,
-.calculator-history h2 {
-    font-family: "Lato", sans-serif;
-    font-size: 2.6rem;
-    font-weight: bold;
-    color: rgb(0, 60, 255);
-    padding-bottom: 1rem;
-}
-
-.usage-examples ul,
-.tips-and-tricks ul,
-.calculator-history ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.usage-examples li,
-.tips-and-tricks li,
-.calculator-history li {
-    font-size: 1.8rem;
-    margin: 0.5rem 0;
-}
-
-.usage-examples li::before,
-.tips-and-tricks li::before,
-.calculator-history li::before {
-    content: '➤';
-    color: rgb(0, 60, 255);
-    margin-right: 0.5rem;
-}
-
-
 /*  */
-
-
 .used-doc {
     width: 100%;
     font-size: 2.6rem;
