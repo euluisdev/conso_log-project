@@ -181,7 +181,7 @@
 /*  */
 
 
-.half-width {
+.used-doc {
     width: 100%;
     font-size: 2.6rem;
     font-weight: bold;
@@ -200,11 +200,11 @@
     transition: transform 0.3s ease;
 }
 
-.half-width:hover {
+.used-doc:hover {
     transform: translateY(-10px);
 }
 
-.half-width h2 {
+.used-doc h2 {
     content: '➤';
     font-family: "Lato", sans-serif;
     font-size: 2.6rem;
@@ -213,7 +213,7 @@
     padding-bottom: 4rem;
 }
 
-.half-width p {
+.used-doc p {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     justify-content: center;
@@ -224,7 +224,7 @@
     color: #FFF;
 }
 
-.half-width a {
+.used-doc a {
     color: blue;
 }
 
