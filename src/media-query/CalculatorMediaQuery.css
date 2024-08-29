@@ -13,8 +13,18 @@
 /* breack point 1230px */
 @media (max-width: 1230px) {
     .full-width p {
-        padding: 1rem 5rem 5rem 5rem;
+        padding: 1rem 4rem 5rem 4rem;
     }
 
-    
+    .usage-examples h2,
+    .tips-and-tricks h2,
+    .calculator-history h2 {
+        font-size: 2rem;
+    }
+
+    .usage-examples li,
+    .tips-and-tricks li,
+    .calculator-history li {
+        font-size: 1.6rem;
+    }
 } 

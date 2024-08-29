@@ -93,6 +93,7 @@
 .calculator-history {
     max-height: 40rem;
     max-width: 35rem;
+    min-width: 30rem;
     resize: none;
     overflow: auto;
     background-color: #1f1e1ff8;
@@ -120,6 +121,7 @@
     justify-content: center;
     padding: 10rem 0 5rem 0;
     flex-wrap: wrap;
+    margin: 2rem;
 }
 
 .history-calc {
@@ -127,6 +129,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 4rem;
 }
 
 .calculator .wrapper {
