@@ -8,4 +8,13 @@
         padding: 5rem 1rem 0rem 1rem;
         margin: 5rem 5rem 1rem 5rem;
     }
-}
+}  
+
+/* breack point 1230px */
+@media (max-width: 1230px) {
+    .full-width p {
+        padding: 1rem 5rem 5rem 5rem;
+    }
+
+    
+} 
