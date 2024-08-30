@@ -75,4 +75,28 @@
         font-size: 1.6rem;
     }
 } 
- 
+
+/* breack point 500px */
+@media (max-width: 500px) {
+    .full-width h2 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .full-width p {
+        font-size: 1.5rem;
+        padding: 0rem 0.5rem 0rem 0.5rem;
+    }
+
+    .usage-examples,
+    .tips-and-tricks {
+        padding: 1rem;
+        margin: 1.5rem 0.5rem;
+    }
+
+    .calculator {
+        gap: 1rem;
+    }
+
+    
+}
