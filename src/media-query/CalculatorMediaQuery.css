@@ -10,8 +10,8 @@
     }
 }  
 
-/* breack point 1230px */
-@media (max-width: 1230px) {
+/* breack point 1235px */
+@media (max-width: 1235px) {
     .full-width p {
         padding: 1rem 4rem 5rem 4rem;
     }
@@ -37,8 +37,28 @@
     }
 
     .full-width p {
-        padding: 0rem 2rem 1rem 2rem;
+        padding: 0rem 1rem 0rem 1rem;
         font-size: 1.6rem;
+    }
+
+    .examples-tricks {
+        padding: 0 0.5rem 2rem 0.5rem;
+    }
+
+    .usage-examples h2,
+    .tips-and-tricks h2,
+    .calculator-history h2 {
+        font-size: 1.8rem;
+    }
+
+    .usage-examples li,
+    .tips-and-tricks li,
+    .calculator-history li {
+        font-size: 1.4rem;
+    }
+
+    .calculator {
+        gap: 3rem;
     }
 
     .used-doc {
@@ -54,4 +74,5 @@
         padding: 1rem;
         font-size: 1.6rem;
     }
-}
+} 
+ 
