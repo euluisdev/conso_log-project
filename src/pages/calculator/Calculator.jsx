@@ -119,7 +119,7 @@ const Calculator = () => {
       </div>
       <section className='flex-cont-ainer'>
         <div className="calculator">
-          <Container maxWidth="xs">
+          <div className="calc-container">
             <div className="wrapper">
               <h3>Calculator</h3>
               <h1 className="resOperation">{num}</h1>
@@ -144,7 +144,7 @@ const Calculator = () => {
               <button className="btn-all gray" onClick={updateScreen}>.</button>
               <button className="btn-all orange" onClick={processEqual}>=</button>
             </div>
-          </Container >
+          </div >
           <section className='history-calc'>
             <CalculatorHistory history={history} />
           </section>
