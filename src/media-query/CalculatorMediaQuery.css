@@ -88,7 +88,12 @@
         padding: 0rem 0.5rem 0rem 0.5rem;
     }
 
-    .usage-examples,
+    .usage-examples {
+        border-radius: 50%;
+        padding: 3rem;
+        overflow: hidden;
+    }
+
     .tips-and-tricks {
         padding: 1rem;
         margin: 1.5rem 0.5rem;
@@ -96,7 +101,40 @@
 
     .calculator {
         gap: 1rem;
+        padding: 3rem 0 2rem 0;
+    }
+    .wrapper {
+        max-width: 30rem;
+        min-width: 29.9rem;
+        max-height: 50.3em;
+        min-height: 50.1em;
+    }   
+    .calculator .btn-all {
+        width: 2.3em;
+        height: 2.3em;
+        font-size: 2.4em;
+        margin: 0.3em;
+    }
+    .calculator .wide {
+        width: 5.2em;
+    }
+    .calculator .resOperation {
+        font-size: 4.5em;
+        margin: 0em 0.2em -0.5em 0em;
+        line-height: 3.5rem;
     }
 
-    
-}
+    .used-doc {
+        padding: 2rem 0rem 0rem 0rem;
+        margin: 0rem 1.5rem 0rem 1.5rem;
+    }
+    .used-doc h2 {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    .used-doc p {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+}  
+ 
