@@ -115,13 +115,14 @@
 }
 
 .calculator {
-    flex: 0.8;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10rem 0 5rem 0;
+    padding: 10rem 3rem 5rem 3rem;
     flex-wrap: wrap;
     margin: 2rem;
+    gap: 10rem;
+    flex-wrap: wrap;
 }
 
 .history-calc {
@@ -132,10 +133,24 @@
     margin: 4rem;
 }
 
-.calculator .wrapper {
+.calc-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 39.6rem;
+    min-width: 39.5rem;
+    height: 100%;
+    max-height: 69rem;
+    min-height: 68rem;
+    overflow: hidden;
     background-color: black;
     border-radius: 1em;
-    padding: 0.8em;
+    padding: 1rem;
 }
 
 .calculator .wrapper h3 {
