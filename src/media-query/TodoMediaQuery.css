@@ -1,0 +1,22 @@
+/* breack point 1400px */
+@media (max-width: 1400px) {
+    .todo-container .todo-custon-grid {
+        min-width: 45%; 
+    }
+}
+
+
+/* breack point 1150px */
+/* @media (max-width: 1150px) {
+    .todo-container .todo-custon-grid {
+        min-width: 50%; 
+    }
+}
+ */
+
+/* breack point 1000px */
+/* @media (max-width: 1000px) {
+    .todo-container .todo-custon-grid {
+        min-width: 55%; 
+    }
+} */
