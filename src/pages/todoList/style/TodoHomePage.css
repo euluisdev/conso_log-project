@@ -41,30 +41,25 @@
 }
 
 .todo-container {
-    width: 100%;
+    width: 100%; 
     display: flex;
     justify-content: center;
-    padding-top: 10rem;
     border-top: 1px solid blue;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
-.todo-digit {
+.todo-title-end {
     width: 100%;
-    display: flex;
-    color: white;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10rem;
+    margin: 10rem 0rem;
 }
 
-.todo-digit p {
+.todo-title-end p {
     font-family: 'Courier New', Courier, monospace; 
-    font-size: 2.2rem;
+    font-size: 2.4rem;
     font-weight: bold;
-    letter-spacing: 0.6rem;
+    letter-spacing: 1rem;
+    color: white;
 }
 
 .todoItem {

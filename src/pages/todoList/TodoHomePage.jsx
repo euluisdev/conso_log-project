@@ -60,7 +60,7 @@ const TodoHomePage = () => {
             </Grid>
 
             <Grid container className="todo-container">
-                <div className="todo-digit">
+                <div className="todo-title-end">
                     <p>Digite para não esquecer!</p>
                 </div>
                 <Grid item md={4} >
