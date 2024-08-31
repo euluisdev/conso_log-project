@@ -63,7 +63,7 @@ const TodoHomePage = () => {
                 <div className="todo-title-end">
                     <p>Digite para não esquecer!</p>
                 </div>
-                <Grid item md={4} >
+                <Grid item md={4} className="todo-custon-grid" >
                     <TodoForm addTask={addTask} />
                     <List className="listLi">
                         {

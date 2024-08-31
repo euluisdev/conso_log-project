@@ -62,6 +62,12 @@
     color: white;
 }
 
+.todo-container .todo-custon-grid {
+    width: 100%; 
+    min-width: 35%; 
+    margin: auto; 
+}
+
 .todoItem {
     margin: 1rem 0 2rem 0;
 }
