@@ -79,7 +79,6 @@
 /* breack point 899px */
 @media (max-width: 899px) {
     .todo-container .todo-custon-grid {
-        min-width: 10%; 
         margin: 0rem 15rem 0rem 15rem;
     }
 
@@ -96,4 +95,12 @@
         padding: 0rem 0rem 5rem 0rem;
     }
 }  
+
+/* breack point 899px */
+@media (max-width: 899px) {
+    .todo-container .todo-custon-grid {
+        margin: 0rem 8rem 0rem 8rem;
+    }    
+}
+
 
