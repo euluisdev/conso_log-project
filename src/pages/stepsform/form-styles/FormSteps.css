@@ -137,4 +137,8 @@
     font-size: 1.7rem;
     padding: 2rem 3rem 10rem 3rem;
     color: #FFF;
+}  
+
+.form-text-end a {
+    color: blue;
 }
