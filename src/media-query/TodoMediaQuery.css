@@ -52,10 +52,27 @@
     }
 }  
 
-
 /* breack point 1000px */
-/* @media (max-width: 1000px) {
+@media (max-width: 1000px) {
     .todo-container .todo-custon-grid {
         min-width: 55%; 
     }
-} */
+
+    .top-section {
+        gap: 2rem;
+        display: block;
+    }
+    .text-section p {
+        padding: 0rem 3rem 5rem 3rem;
+        font-size: 1.8rem;
+    }
+
+    .calendar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 5rem 0rem;
+    }
+}  
+ 
