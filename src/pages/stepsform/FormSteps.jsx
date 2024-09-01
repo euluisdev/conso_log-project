@@ -12,7 +12,9 @@ import FormHandlerSteps from "./form-components/FormHandlerSteps";
 import useForm from "./hooks/useForm";
 import { useState } from "react";
 
-import "./form-styles/FormImputs.css";
+import "./form-styles/FormImputs.css";  
+
+import "../../media-query/FormMediaQuery.css";
 
 const formAnswer = {
   name: "",
@@ -56,8 +58,6 @@ const FormSteps = () => {
     window.open(whatsappUrl, '_blank');
 
     setOpen(true);
-
-    /*     alert(`Olá ${data.name}, sua mensagem foi enviada com sucesso! Obrigado.`);   */
   };
 
   const handleClose = () => {
