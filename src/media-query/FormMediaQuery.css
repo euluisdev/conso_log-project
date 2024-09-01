@@ -6,12 +6,12 @@
     }
 
     .form-text-end {
-        width: 100%;
-        font-size: 2.6rem;
-        font-weight: bold;
-        padding: 2rem 1rem 0rem 1rem;
-        margin: 10rem 4rem 5rem 4rem;
-        text-align: center;
+        padding: 4rem 0rem 0rem 0rem;
+        margin: 5rem 5rem 5rem 5rem;
+    }
+
+    .form-text-end p {
+        padding: 2rem 1rem 5rem 1rem;
     }
 }
 
