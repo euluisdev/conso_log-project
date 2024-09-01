@@ -34,12 +34,24 @@
 
 
 /* breack point 1150px */
-/* @media (max-width: 1150px) {
+@media (max-width: 1150px) {
     .todo-container .todo-custon-grid {
         min-width: 50%; 
     }
-}
- */
+
+    .top-section {
+        gap: 4rem;
+    }
+    .text-section p {
+        padding: 0rem 3rem 8rem 3rem;
+        font-size: 1.8rem;
+    }
+
+    .calendar {
+        margin: 15rem 6rem 1rem 0rem;
+    }
+}  
+
 
 /* breack point 1000px */
 /* @media (max-width: 1000px) {
