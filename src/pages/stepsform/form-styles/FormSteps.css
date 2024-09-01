@@ -80,21 +80,6 @@
     background-color: rgb(40, 40, 40);
     color: blue;
 }
-     
-
-.text-tecnic {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 10rem;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to top, #000000, rgba(128, 128, 128, 0.826), #000066);
-}
-
-.text-tecnic p {
-    text-align: center;
-} 
 
 .form-text-end {
     width: 100%;

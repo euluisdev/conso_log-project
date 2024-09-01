@@ -10,7 +10,7 @@ const MoviesHomePage = () => {
     return (
         <div className="movies-app">
             <section className="double-text">
-                <section className="movies-txts form-text-end">
+                <section className="movies-txts movies-text-end">
                     <h2>Explore o Universo Cinematográfico</h2>
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;Descubra o universo cinematográfico em suas mãos com nossa nova aplicação React! Nossa aplicação foi desenvolvida utilizando as tecnologias mais modernas e robustas para garantir uma experiência de usuário fluida e eficiente. Imagine ter acesso a um vasto catálogo de filmes, todos ao alcance de um clique. Com nossa ferramenta, você pode explorar e pesquisar seus filmes favoritos em segundos, graças à integração perfeita com a API do <strong>TMDB</strong>.
@@ -21,7 +21,7 @@ const MoviesHomePage = () => {
                         <br />&nbsp;&nbsp;&nbsp;&nbsp;Então, por que esperar? Junte-se a nós e mergulhe no mundo do cinema com facilidade e estilo. Digite agora mesmo seu filme preferido e comece sua jornada cinematográfica! <span className="emoji">🍿</span>
                     </p>
                 </section>
-                <section className="movies-txts2 form-text-end">
+                <section className="movies-txts2 movies-text-end">
                     <h2>Termos Técnicos da Aplicação</h2>
                     <p>
                         &nbsp;&nbsp;&nbsp;&nbsp;Na nossa Aplicação completa, ulizamos a Biblioteca 'lib' <a href="https://react.dev/">React </a> para criar componentes reutilizáveis que gerenciam eficientemente o estado da aplicação, permitindo uma experiência de usuário dinâmica e responsiva. 
