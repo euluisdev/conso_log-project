@@ -1,12 +1,16 @@
 /* breack point maxwidth 1629px */
 @media (max-width: 1629px) {
     .form-container {
-        box-sizing: border-box;
-        width: 100%;
         max-width: 55%;
-        height: 100%;
-        min-height: 65rem;
-        margin: 0 auto;
         padding: 4rem 0rem 0rem 0rem;
     }
 }
+
+/* breack point maxwidth 1420px */
+/* @media (max-width: 1420px) {
+    .form-container {
+        max-width: 65%;
+        padding: 4rem 0rem 0rem 0rem;
+    }
+} */
+
