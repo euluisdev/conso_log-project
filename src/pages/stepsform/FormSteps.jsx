@@ -131,7 +131,7 @@ const FormSteps = () => {
       </div>
 
       <section className="text-tecnic">
-        <div className="half-width highlighted-text">
+        <div className="form-text-end">
           <h2><strong>Sobre Este Projeto</strong><br /><br /></h2>
           <p>
             Este formulário de avaliação foi desenvolvido com React e destaca várias práticas modernas de desenvolvimento web.<br /><br />
