@@ -76,3 +76,24 @@
     }
 }  
  
+/* breack point 899px */
+@media (max-width: 899px) {
+    .todo-container .todo-custon-grid {
+        min-width: 10%; 
+        margin: 0rem 15rem 0rem 15rem;
+    }
+
+    .text-section p {
+        padding: 0rem 2rem 5rem 2rem;
+        font-size: 1.8rem;
+    }
+
+    .calendar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 5rem 0rem;
+    }
+}  
+
