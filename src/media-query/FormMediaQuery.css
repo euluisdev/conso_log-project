@@ -6,7 +6,6 @@
     }
 
     .form-text-end {
-        padding: 4rem 0rem 0rem 0rem;
         margin: 5rem 5rem 5rem 5rem;
     }
 
@@ -20,7 +19,6 @@
 @media (max-width: 1420px) {
     .form-container {
         max-width: 65%;
-        padding: 4rem 0rem 0rem 0rem;
     }
 } 
 
@@ -28,6 +26,37 @@
 @media (max-width: 1120px) {
     .form-container {
         max-width: 80%;
-        padding: 4rem 0rem 0rem 0rem;
+    }
+} 
+
+/* breack point maxwidth 890px */
+@media (max-width: 890px) {
+    .form-container {
+        max-width: 85%;
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .form-container form {
+    margin: 0 13rem;
+    }
+
+    .steps::after { 
+        width: 75%;
+    }
+
+    .form-control { 
+        margin: 1rem -5rem 1rem -5rem; 
+    } 
+
+    .steps { 
+        gap: 5rem; 
+    }
+
+    .form-text-end {
+        margin: 5rem 3rem 3rem 3rem;
+        padding: 2rem 0.5rem 0rem 0.5rem;
+    }
+    .form-text-end p {       
+        line-height: 1.6rem;
+        font-size: 1.6rem; 
     }
 } 

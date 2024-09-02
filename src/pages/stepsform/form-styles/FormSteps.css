@@ -32,7 +32,7 @@
     height: 100%;
     min-height: 65rem;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
     background-color: rgb(40, 40, 40);
     box-shadow: rgb(0, 0, 255) 0px 5px 59px 9px;
 }
