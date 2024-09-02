@@ -2,8 +2,8 @@
 .form-control { 
     display: flex; 
     flex-direction: column; 
-    gap: 3rem; 
-    margin-bottom: 2rem; 
+    gap: 4rem; 
+    margin: 1rem 0rem 1rem 0rem; 
 } 
 
 label {
@@ -11,7 +11,11 @@ label {
     font-weight: bold;
     color: #FFF;
     font-size: 1.5rem;
-    padding-top: 7rem;
+    padding: 7rem 0rem 0rem 0rem;
+}
+
+input {
+    margin: 0.6rem 0rem 0.6rem 0rem; 
 }
 
 input, textarea { 
