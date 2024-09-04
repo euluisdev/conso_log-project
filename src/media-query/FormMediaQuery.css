@@ -122,3 +122,10 @@
     }
 }  
  
+/* breack point maxwidth 620px */
+@media (max-width: 620px) {
+    .form-header h2 {
+        font-size: 2.1rem;
+        padding: 14rem 0rem 0rem 0rem;
+    }
+}
