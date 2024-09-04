@@ -39,6 +39,10 @@
     margin: 0 13rem;
     }
 
+    .form-header h2 {
+        font-size: 2.5rem;
+    }
+
     .steps::after { 
         width: 75%;
     }
@@ -60,3 +64,61 @@
         font-size: 1.6rem; 
     }
 } 
+
+
+/* breack point maxwidth 750px */
+@media (max-width: 750px) {
+    .form-header h2 {
+        font-size: 2.1rem;
+        padding: 14rem 0rem 0rem 0rem;
+    }
+    .form-header p {
+        padding: 2rem 0.5rem 0rem 0.5rem;
+        font-size: 1.7rem;
+    }
+
+    .form-container {
+        max-width: 90%;
+    }
+
+    
+    .steps::after { 
+        width: 85%;
+    }
+    .form-control { 
+        margin: 1rem -5rem 1rem -5rem; 
+    } 
+    .steps { 
+        gap: 4rem; 
+    }
+
+    .step p {  
+        font-size: 1.6rem;
+    } 
+    .step svg {
+        font-size: 2.4rem;
+        margin-bottom: 0.4rem;
+    }  
+
+    .form-control { 
+        margin: 1rem -7rem 1rem -7rem; 
+    } 
+
+    .actions button {
+        font-size: 1.6rem;
+    }
+
+    .thanks-container {
+        margin: -1rem -8rem 2rem -8rem;
+    } 
+
+
+    .form-text-end {
+        padding: 2rem 0rem 0rem 0rem;
+    }
+    .form-text-end h2 {       
+        font-size: 2rem; 
+        margin: 1rem 0rem -1rem 0rem;
+    }
+}  
+ 
