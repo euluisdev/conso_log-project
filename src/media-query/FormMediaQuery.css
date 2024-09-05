@@ -85,13 +85,12 @@
     .steps::after { 
         width: 85%;
     }
-    .form-control { 
-        margin: 1rem -5rem 1rem -5rem; 
-    } 
     .steps { 
         gap: 4rem; 
     }
-
+    .form-control { 
+        margin: 1rem -7rem 1rem -7rem; 
+    } 
     .step p {  
         font-size: 1.6rem;
     } 
@@ -99,10 +98,6 @@
         font-size: 2.4rem;
         margin-bottom: 0.4rem;
     }  
-
-    .form-control { 
-        margin: 1rem -7rem 1rem -7rem; 
-    } 
 
     .actions button {
         font-size: 1.6rem;
@@ -124,7 +119,63 @@
  
 /* breack point maxwidth 620px */
 @media (max-width: 620px) {
-    .form-header h2 {
-        font-size: 2.1rem;
+    .form-container {
+        max-width: 90%;
+        min-height: 55rem;
+    }
+
+    .steps::after { 
+        width: 92%;
+    }
+    .steps { 
+        gap: 5rem; 
+    }
+    .step p {  
+        font-size: 1.5rem;
+    } 
+    .step svg {
+        font-size: 2.2rem;
+        margin-bottom: 0.5rem;
+    } 
+
+    .form-control { 
+        margin: -5rem -9rem 1rem -9rem; 
+        padding: 0rem 0rem 4rem 0rem;
+    } 
+    input, textarea { 
+        padding: 1rem;
+    }
+
+    .actions button {
+        font-size: 1.4rem;
+        margin: -5rem 0rem 2rem 0rem;
+    }
+
+    .thanks-container {
+        margin: -1rem -12rem 2rem -12rem;
+    } 
+    .thanks-container h1 {
+        padding: 0.5rem 0;
+        font-size: 1.8rem;
+    } 
+    .thanks-container p { 
+        font-size: 1.5rem;
+        margin-bottom: 0.1rem;
+    }
+    .review-data h3{
+        font-size: 1.5rem;
+    }  
+
+    .radio-container input { 
+        bottom: 20px; 
+        left: 50px;  
+    } 
+    .radio-container p {  
+        font-size: 1rem;
+        opacity: 0.3;
+    } 
+    .label-comment {
+        font-size: 1.6rem;
+        padding: 6rem 0rem 0rem  0rem;
     }
 }
