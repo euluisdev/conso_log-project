@@ -36,7 +36,7 @@
         padding: 2rem 0rem 0rem 0rem;
     }
     .form-container form {
-    margin: 0 13rem;
+        margin: 0 13rem;
     }
 
     .form-header h2 {
@@ -180,8 +180,8 @@
     }
 }
 
-/* breack point maxwidth 620px */
-@media (max-width: 620px) {
+/* breack point maxwidth 550px */
+@media (max-width: 550px) {
     .steps::after { 
         width: 95%;
     }
@@ -210,4 +210,22 @@
     }
 }
 
-   
+/* breack point maxwidth 440px */
+@media (max-width: 440px) {
+    .steps { 
+        gap: 1rem; 
+        font-size: 2rem; 
+        margin: 0.5rem 0rem 0.5rem 0rem; 
+    } 
+    .steps p {
+        font-size: 1.1rem;
+        margin: 0.2rem 1rem 0rem 1rem;
+    } 
+    .step {  
+        width: 11rem;
+    }
+    .step svg {
+        font-size: 2rem;
+        margin: 0.4rem -1rem 0.4rem -1rem;
+    }  
+}   
