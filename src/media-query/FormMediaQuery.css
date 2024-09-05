@@ -212,6 +212,22 @@
 
 /* breack point maxwidth 440px */
 @media (max-width: 440px) {
+    .form-header h2 {
+        font-size: 1.8rem;
+        padding: 12rem 0rem 0rem 0rem;
+    }
+    .form-header p {
+        padding: 1.6rem 0.5rem 0rem 0.5rem;
+        font-size: 1.4rem;
+    }
+
+    .form-control { 
+        margin: -5rem -12rem 1rem -12rem; 
+    } 
+    input, textarea { 
+        padding: 0.8rem;
+    }
+
     .steps { 
         gap: 1rem; 
         font-size: 2rem; 
@@ -229,3 +245,4 @@
         margin: 0.4rem -1rem 0.4rem -1rem;
     }  
 }   
+
