@@ -1,142 +1,205 @@
-# Projeto CONSO dot LOG | Aplicação Multi-Funcional com React Router;
+# CONSO.LOG — Multi-Functional React Application
 
-# Link : https://consodotlog.vercel.app 
+A multi-functional web application built with React and Vite, bringing together different interactive features and practical projects in a single platform.
 
-## Índice
+**Live Demo:** [https://consodotlog.vercel.app](https://consodotlog.vercel.app)
 
-1. [Visão Geral do Projeto](#visão-geral-do-projeto)
-2. [Funcionalidades Principais](#funcionalidades-principais)
-   - [Página Inicial](#1-página-inicial)
-   - [Calculadora](#2-calculadora)
-   - [Lista de Tarefas](#3-lista-de-tarefas)
-   - [Sistema de Filmes](#4-sistema-de-filmes)
-   - [Formulário Multi-Etapas](#5-formulário-multi-etapas)
-3. [Tecnologias Utilizadas](#tecnologias-utilizadas)
-4. [Estrutura do Projeto](#estrutura-do-projeto)
-5. [Como Executar o Projeto](#como-executar-o-projeto)
-6. [Contribuições](#contribuições)
-7. [Licença](#licença)
+## Overview
 
-## Visão Geral do Projeto
+CONSO.LOG is a personal project developed to bring together multiple applications and interactive features in one place.
 
-  Este projeto é uma aplicação web desenvolvida com VITE-React, hospedada no Vercel, e projetada para funcionar como uma vitrine de minhas competências técnicas para qualquer usuário que pretenda acessar a aplicação em pleno funcionamento. Em vez de criar e hospedar cada projeto individualmente, achei mais inteligente e eficiente integrar várias funcionalidades em uma única aplicação. Nele foi utilizado várias tecnologias web, e também a minha capacidade de gerenciar e organizar um projeto próprio, de médio a grande porte de forma eficaz, do início ao fim. Ao longo do desenvolvimento, adquiri uma experiência ampla em GIT, aprendendo a gerenciar diferentes branches, realizar commits estratégicos e manter um histórico de desenvolvimento claro e organizado, onde trabalhei intensivamente com mais de 100 branches e realizei mais de 300 commits ao longo do desenvolvimento deste projeto. A aplicação é organizada em várias páginas principais que integra várias funcionalidades, cada uma delas acessível a partir de uma barra de navegação fixa e flutuante, dividida em várias páginas principais com funcionalidades distintas, representando meu portfólio. O projeto oferece uma plataforma centralizada onde os usuários possam acessar diferentes ferramentas, utilitários e funcionalidades tudo dentro de uma única aplicação. Todas essas páginas são gerenciadas através do React Router, o que permite uma navegação fluida e eficiente. A aplicação também inclui um sistema de roteamento aninhado, particularmente no módulo de filmes, onde subpáginas específicas são acessíveis dentro da página principal de filmes, atravéz do consumo de API's. Isso mostra como o React pode ser utilizado para criar aplicações ricas e multifuncionais, proporcionando uma experiência de usuário suave e integrada.
+Instead of developing and deploying each exercise as a separate application, I decided to integrate them into a single project. This approach allowed me to practice building a larger React application, organizing components, managing application state, implementing navigation, and integrating different libraries and services.
 
-## Funcionalidades Principais
+The application uses React Router to manage navigation between its main sections, including nested routes for the movie browsing module.
 
-Abaixo estão as funcionalidades principais incluídas na aplicação, cada uma delas representando um projeto ou componente que desenvolvi como parte do meu portfólio:
+The project also represents my learning journey with React and the JavaScript ecosystem, covering several practical concepts through real implementations.
 
-### 1. Página Inicial
-A página inicial (`PageHome`) apresenta um slider interativo e uma breve descrição das funcionalidades disponíveis na aplicação. É a porta de entrada para explorar as diferentes seções do projeto.
+## Main Features
 
-### **1.0 Barra de Navegação Fixa**
-- **Navegação Intuitiva**: A barra de navegação está fixada no topo da página, facilitando o acesso a diferentes seções da aplicação, incluindo Calculadora, Lista de Tarefas, Filmes e Formulário de Avaliação.
-- **Ícones Representativos**: Cada link na barra de navegação é acompanhado por um ícone relevante, melhorando a usabilidade e a experiência visual.
-- **Menu Responsivo**: Um ícone de menu permite a visualização de um menu lateral em dispositivos menores, garantindo que a navegação seja fácil em qualquer dispositivo.
+### 1. Home Page
 
-### **1.1 Página Inicial com Slider de Imagens**
-- **Carrossel Interativo**: A página inicial apresenta um slider de imagens que destaca as principais funcionalidades da aplicação. O carrossel foi construído utilizando Swiper.js, proporcionando uma navegação suave e controles intuitivos.
-- **Título Dinâmico**: O título da página inicial é dinâmico, adaptando-se ao conteúdo do slider para manter a interface envolvente.
-- **Texto Explicativo**: Abaixo do slider, um texto detalhado explica as imagens exibidas, descrevendo como cada funcionalidade resolve problemas específicos dos usuários.
+The home page introduces the application and provides access to its main features.
 
-### **1.2 Responsividade**
-- **Design Adaptável**: O layout da aplicação é completamente responsivo, assegurando uma experiência de usuário consistente em todos os dispositivos, desde smartphones até desktops.
-- **Estilização Customizada**: A aplicação foi estilizada utilizando uma combinação de CSS puro e Material UI, oferecendo um design moderno e atraente.
+- Interactive image carousel built with Swiper.
+- Navigation menu with links to the application's sections.
+- Responsive navigation menu for smaller screens.
+- Dynamic content and descriptions.
 
-### **1.3 Swiper.js**
-- **Slider de Imagens**: Utilizado para criar o carrossel de imagens na página inicial, permitindo a adição de navegação, paginação e transições suaves entre slides.
+### 2. Calculator
 
-### **1.4 Material UI**
-- **Ícones**: A biblioteca `@mui/icons-material` foi utilizada para adicionar ícones que representam as diferentes seções na barra de navegação.
-- **Estilização**: A Material UI também foi utilizada para fornecer componentes estilizados, como botões e tipografia.
+A calculator that allows users to perform basic mathematical operations.
 
+This feature demonstrates React state management, event handling, and interactive component development.
 
-### 2. Calculadora
-A funcionalidade de calculadora (`Calculator`) permite aos usuários realizar cálculos básicos de forma simples e direta. Esta seção demonstra a aplicação prática de manipulação de estados e eventos em React.
+### 3. Task Manager
 
-### 3. Lista de Tarefas
-A lista de tarefas (`TodoList`) permite aos usuários adicionar, remover e marcar tarefas como concluídas. Esta seção utiliza estados e listas para gerenciar e exibir as tarefas do usuário.
+A simple task management feature that allows users to:
 
-### 4. Sistema de Filmes
-O sistema de filmes (`MoviesHomePage`) oferece várias sub-páginas:
-- **Melhores Filmes (`MoviesBest`)**: Exibe uma lista dos melhores filmes.
-- **Lista de Filmes (`MoviesList`)**: Apresenta uma lista geral de filmes.
-- **Busca de Filmes (`MoviesSearch`)**: Permite aos usuários buscar filmes específicos por título.
+- Add new tasks.
+- Mark tasks as completed.
+- Remove tasks.
+- Manage task lists through React state.
 
-### 5. Formulário Multi-Etapas
-O formulário multi-etapas (`FormSteps`) guia o usuário através de uma série de etapas para preencher e enviar informações. Após o envio, os dados podem ser enviados e confirmados, proporcionando uma experiência de formulário fluida.
+### 4. Movie Browser
 
-## Tecnologias Utilizadas
+A movie browsing section organized into different pages:
 
-- **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **React Router**: Gerenciamento de rotas e navegação entre páginas.
-- **Material UI**: Componentes de interface do usuário estilizados e personalizáveis.
-- **Swiper.js**: Biblioteca para criação de sliders modernos e responsivos.
-- **CSS**: Estilização customizada para garantir uma interface amigável e visualmente atraente.
+- **Best Movies:** Displays a selection of top-rated movies.
+- **Movie List:** Provides a general movie listing.
+- **Movie Search:** Allows users to search for movies by title.
 
-## Estrutura do Projeto
+This module uses API integration and nested routing with React Router.
 
-A estrutura básica do projeto é a seguinte:  :  :
+### 5. Multi-Step Evaluation Form
 
+An interactive form divided into multiple steps, guiding users through the submission process.
 
+The form includes:
 
+- User information fields.
+- Rating and evaluation inputs.
+- Additional comments.
+- A final review and confirmation step.
+- WhatsApp message integration.
 
+After completing the form, users can send the collected information through WhatsApp to the configured phone number. The message is prepared dynamically using the submitted form data.
 
+The application also displays a confirmation modal and resets the form after the confirmation is closed.
 
+## Responsive Design — Mobile First
 
+The entire application is responsive and designed to provide a consistent experience across different screen sizes.
 
+The interface follows a Mobile First approach, adapting its layout and navigation to smartphones, tablets, and desktop screens.
 
-# Formulário de Avaliação com React
+## Technologies Used
 
-Este é um projeto de formulário de avaliação construído com React, utilizando componentes reutilizáveis e hooks personalizados para gerenciar etapas do formulário e controlar o estado dos dados inseridos pelos usuários.
+| Technology | Purpose |
+|---|---|
+| React 18 | User interface development |
+| JavaScript | Application logic |
+| Vite 5 | Development server and build tool |
+| React Router DOM 6 | Routing and navigation |
+| Material UI 5 | UI components and styling |
+| Styled Components | Component-based styling |
+| Emotion | Styling support for Material UI |
+| Swiper 11 | Interactive carousel |
+| React Icons | Icon library |
+| React Calendar | Calendar component |
+| CSS | Custom responsive styling |
+| Vercel | Application deployment |
 
-## Funcionalidades
+## Concepts and Development Practices
 
-- **Formulário Multi-Etapas**: O formulário é dividido em três etapas: informações do usuário, avaliação e mensagem de agradecimento. Cada etapa é um componente separado, permitindo um fluxo de preenchimento intuitivo.
-- **Validação Simples de Campos**: Utiliza um `useState` para gerenciar o estado dos dados inseridos e atualizá-los dinamicamente conforme o usuário preenche os campos.
-- **Envio de Dados via WhatsApp**: O formulário permite que o usuário envie os dados coletados para um número de WhatsApp, utilizando uma URL formatada dinamicamente.
-- **Modal de Confirmação**: Após o envio dos dados, um modal é exibido confirmando o envio com uma mensagem personalizada.
-- **Reset do Formulário**: O formulário é automaticamente redefinido e retorna à primeira etapa após o fechamento do modal de confirmação, proporcionando uma experiência de usuário limpa e profissional.
+Throughout this project, I worked with several important React and frontend development concepts:
 
-## Tecnologias Utilizadas
+- Component-based architecture.
+- Reusable React components.
+- State management with React Hooks.
+- Event handling and controlled form inputs.
+- Custom Hooks.
+- Client-side routing with React Router.
+- Nested routes.
+- API integration.
+- Multi-step form workflows.
+- Responsive layouts and Mobile First design.
+- Git version control and branch management.
 
-### **React**
-- **Hooks**: Utilizamos `useState` para gerenciar o estado do formulário e `useEffect` para controlar a mudança de etapas e a abertura do modal. Além disso, foi implementado um hook personalizado, `useForm`, para controlar o fluxo entre as etapas do formulário.
-- **Componentização**: O projeto é organizado em componentes reutilizáveis e independentes, seguindo boas práticas de desenvolvimento em React.
+## Project Structure
 
-### **React Icons**
-- Utilizamos as bibliotecas `react-icons/gr` e `react-icons/fi` para adicionar ícones ao formulário, melhorando a experiência do usuário com botões visuais.
+The repository contains the following main directories and configuration files:
 
-### **Material UI**
-- **Modal e Estilização**: A biblioteca `@mui/material` foi utilizada para criar o modal que exibe a mensagem de confirmação ao usuário, além de componentes de estilização como `Box`, `Typography`, e `Button`. 
-  - Documentação oficial: [Material UI Modal](https://mui.com/material-ui/react-modal/)
-- **Estilos customizados**: Utilizamos a capacidade de customização do Material UI para aplicar estilos personalizados no modal.
+```text
+conso_log-project/
+├── api/
+├── src/
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── LICENSE
+├── package.json
+├── package-lock.json
+├── vercel.json
+├── vite.config.js
+└── README.md
+```
 
-### **Hooks Personalizados**
-- **useForm**: Um hook personalizado que gerencia as etapas do formulário, verificando se é a primeira ou última etapa, e controlando as transições de etapas.
+## Getting Started
 
-## Fluxo de Trabalho
+To run the project locally, follow these steps.
 
-1. **Primeira Etapa**: O usuário insere seu nome e e-mail.
-2. **Segunda Etapa**: O usuário insere sua avaliação utilizando icons e comentários adicionais.
-3. **Terceira Etapa**: Uma mensagem de agradecimento é exibida, junto com  todos os dados coletados do usuário e o botão para enviar os dados via API do WHATSSAPP.
+### Prerequisites
 
-Após o envio:
-- **Modal**: Um Modal aparece confirmando o envio, com uma mensagem personalizada com nome inserido no input, e um botão para fechar o Modal.
-- **Redefinição**: Ao fechar o Modal, o formulário é redefinido para a primeira etapa, com todos os campos limpos, como podemos verificar no próprio projeto eme seu endereço.
+- Node.js
+- npm
 
+### Installation
 
+Clone the repository:
 
+```bash
+git clone https://github.com/euluisdev/conso_log-project.git
+```
 
+Navigate to the project directory:
 
+```bash
+cd conso_log-project
+```
 
+Install the dependencies:
 
+```bash
+npm install
+```
 
+Start the development server:
 
-## Como Executar o Projeto
+```bash
+npm run dev
+```
 
-Para rodar o projeto localmente:
+Vite will provide a local development URL in the terminal, usually:
 
-1. Clone o repositório:
-   ```bash
-   git clone 
-  
+```text
+http://localhost:5173
+```
+
+## Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Starts the development server |
+| `npm run build` | Generates the production build |
+| `npm run preview` | Previews the production build locally |
+| `npm run lint` | Runs ESLint to check the code |
+
+## Production Build
+
+To generate the production build:
+
+```bash
+npm run build
+```
+
+The generated files are stored in the `dist/` directory.
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Deployment
+
+The application is deployed on Vercel.
+
+**Live Application:** [https://consodotlog.vercel.app](https://consodotlog.vercel.app)
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Author
+
+Developed by [euluisdev](https://github.com/euluisdev).
